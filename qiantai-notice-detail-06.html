@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>葵果前台门户首页</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/qiantai.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="container" class="white-shild clearfix">
+      <div id="white-header">
+        <div>
+          <a id="white-logo" class="clearfix" href=""><img src="img/houtaiicon_b.png"></a>
+          <span class="loginplug"><a href="qiantai-login.html">登录</a><i>/</i><a href="qiantai-register.html">注册</a></span>
+          <ul id="header_nav">
+            <li><a href="qiantai-index.html">首页</a></li>
+            <li><a href="qiantai-product.html">产品介绍</a></li>
+            <li><a href="qiantai-sdk.html">SDK下载</a></li>
+            <li class="current"><a href="qiantai-notice.html">葵果动态</a></li>
+            <li><a href="qiantai-faq.html">帮助中心</a></li>
+            <li class="scrollObj"></li>
+          </ul>
+        </div>
+      </div>
+        <div class="notice_detail clearfix">
+          <div class="newsdiv clearfix">
+            <div class="news_left" style="position:relative;">
+                <h3>Localytics：2015年移动应用营销趋势预测</h3>
+                <p> 发布时间：<a>2014-12-5</a></p>
+                <article>2014年，应用改变了品牌与消费者交互的方式，不仅是传统交易方面，而且鼓励了创建企业价值和信誉的新方式。对应用的关注主要是基于用户易于使用、移动化和快捷的需求。从某种程度上来说，正是用户重新定义了移动的未来。</article>
+       <article>现在，品牌追随开发新应用的需求。用户按照自己的意愿参与其中。应用的供需水平比以往更高；但是传播质量却不如人意。</article>
+       <article>移动不仅仅是渠道，它是一种行为</article>
+       <article>移动网络是不充分的，用户和手机以个性、快速、一致的方式进行交互，使用应用是其行为的自然延伸，它不仅仅是一种渠道。正因为如此，应用用户正在寻找更能传递价值的引人入胜的体验。</article>
+       <article>应用使用量的增长反映了这种行为，较高的放弃率也证明了这点。应用用户正在寻找和应用深度互动的方法，但是，目前应用并不能满足用户的期待。</article>
+       <article>纵观应用，今年使用时间增长21%，但是，如果一个用户7天后仍然没有再访问这个应用，那么60%的可能性是他再也不会访问它了。</article>
+       <article>用户正在寻找新的、有趣的应用，但是他们并不是被动的等待。在某些垂直市场，放弃率比整体更高。结论是：是时候开发更好的应用，而不是更多的。</article>
+       <article>现在，用户希望在与应用互动时获得双向体验，他们希望应用能够倾听他们的声音并据此优化。这意味着投资设计真正的个性化体验和相关新功能，所有这些都要以用户期待为首要。今年，应用行业开速发展，正是用户带来了收益，他们的体验也是成功的首要组成部分。</article><br><br>
+       <a style="position:absolute;left:0;botttom:0;" href="javascript:window.history.go(-1);"><<上一篇</a><a style="position:absolute;right:0;botttom:0;" href="qiantai-notice-detail-01.html">下一篇>></a>
+            </div>
+            <div class="news_right">
+              <div class="n_help_center clearfix">
+                <div><img src="img/n_hc.png"></div>
+                <div><p>帮助中心</p><p>help&nbsp;center</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="white-main-footer">
+      <div>
+        <div>
+          <ul>
+            <li><a>下载中心</a></li>
+            <li><a>隐私政策</a></li>
+            <li><a>服务条款</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><a>加入我们</a></li>
+            <li><a>联系我们</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Copyright©</li>
+            <li>联系地址：上海市闵行区秀文路868号西子国际中心</li>
+          </ul>
+        </div>
+        <img src="img/houtaiicon_w.png">
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flag.js"></script>
+    <script>
+      window.onload = function (){
+        var a = $(window).height() -70;
+        $(".white-shild").css("min-height",a);
+      }
+     $("#header_nav > li").ScrollNav({
+        scrollObj:"#header_nav > .scrollObj", //滑动的对象
+        speed:"fast" //速度
+      });
+    </script>
+  </body>
+</html>

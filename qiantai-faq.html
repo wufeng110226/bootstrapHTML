@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>葵果前台门户首页</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/qiantai.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="container" class="white-shild clearfix">
+      <div id="white-header">
+        <div>
+          <a id="white-logo" class="clearfix" href=""><img src="img/houtaiicon_b.png"></a>
+          <span class="loginplug"><a href="qiantai-login.html">登录</a><i>/</i><a href="qiantai-register.html">注册</a></span>
+          <ul id="header_nav">
+            <li><a href="qiantai-index.html">首页</a></li>
+            <li><a href="qiantai-product.html">产品介绍</a></li>
+            <li><a href="qiantai-sdk.html">SDK下载</a></li>
+            <li><a href="qiantai-notice.html">葵果动态</a></li>
+            <li class="current"><a href="qiantai-faq.html">帮助中心</a></li>
+            <li class="scrollObj"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="">
+        <img src="img/ad_tjqf.jpg">
+      </div>
+      <div class="white_product_tab">
+        <div class="my_faq_tab_shild">
+          <ul class="nav nav-tabs my_faq_tab" role="tablist">
+            <li role="presentation" class="active"><a href="#f_dr" id="f_dr_tab" role="tab" data-toggle="tab" aria-controls="f_dr">开发者问题</a></li>
+            <li role="presentation"><a href="#f_faq" role="tab" id="f_faq_tab" data-toggle="tab" aria-controls="f_faq">广告主问题</a></li>
+            <li role="presentation"><a href="#f_as" role="tab" id="f_as_tab" data-toggle="tab" aria-controls="f_as">常见问题</a></li>
+            <li role="presentation"><a href="#f_puns" role="tab" id="f_puns_tab" data-toggle="tab" aria-controls="f_puns">审核问题</a></li>
+          </ul>
+        </div>
+        <div id="myTabContent" class="tab-content my_faq_tabcontent">
+          <div role="tabpanel" class="tab-pane fade active in" id="f_dr" aria-labelledby="f_dr_tab">
+            <div>
+              <h4>一、怎样创建新应用？</h4>
+              <p>1. 登录葵果账号 ，点击左侧导航栏<b>应用中心—添加应用</b></p>
+              <p>2. 进入页面后，选择对应的应用平台，并填写应用的描述信息。</p>
+              <p>3. 下载对应的SDK，创建应用即完成。</p>
+              <h4>二、葵果Android SDK嵌入文档</h4>
+              <p><a>1.Android SDK下载</a></p>
+              <p><a>2.IOS SDK下载</a></p>
+              <h4>三、如何在应用中展示广告？</h4>
+              <p>1. 登录并填写应用程序信息，完成后即可进入对应SDK的下载页面。</p>
+              <p>2. 点击下载SDK，下载的压缩包中包含开发说明文档和SDK文件，请根据开发说明 文档中的详细步骤将SDK嵌入您的应用。</p>
+              <p>3. 将嵌入SDK的应用上传到葵果，并等待审核。通过审核之后，您的应用就能正常接收并展现广告了。 请注意：嵌入SDK但未通过审核的应用只能接收测试广告！ </p>
+              <h4>四、怎样下载SDK？</h4>
+              <p>创建新应用、填写应用信息后，即可直接下载相关类型的SDK。</p>
+              <p>你也可以到葵果SDK下载页面上，下载所需类型的SDK。</p>
+            </div>
+          </div>
+          <!-- <div role="tabpanel" class="tab-pane fade" id="f_ar" aria-labelledby="f_ar_tab">
+            <p></p>
+          </div> -->
+          <div role="tabpanel" class="tab-pane fade" id="f_faq" aria-labelledby="f_faq_tab">
+            <div>
+              <h4>一、如何创建广告？</h4>
+              <p>1.登录葵果广告主后台</p>
+              <p>2.点击”广告管理”页面中的”创建广告”，系统跳至”创建广告”的页面。</p>
+              <p>3.用户输入广告的相关信息。</p>
+              <p>4. 点击”下一步”选择投放的目标信息，制定好广告预算,点击”完成”即完成一个广告的创建过程。</p>
+              <h4>二、如何做到精准投放广告？</h4>
+              <p>广告主用户创建广告时，可以填写投放目标信息，而开发者用户提交应用时会填写应用的相关信息，那么平台就会自动地将广告按照广告主制定的投放目标推送到跟该目标相符合的应用程序中，从而实现精准投放。</p>
+              <h4>三、广告如何收费？</h4>
+              <p>葵果广告平台对于广告的收费分为每千次展示收费和单次点击收费，每千次展示收费和单次点击收费的基本标准是根据广告主创建的广告内容（是否有文字、图标、图片）、制定的投放目标（覆盖范围、投放时间段）而给定的，即提供一个最低定价和一般定价区间，具体定价由广告主用户自主设定。</p>
+              <h4>四、广告效果如何知道？</h4>
+              <p>1. 广告主用户登录到广告主后台。</p>
+              <p>2. 进入”数据统计”页面，查看自己的广告在某段时期或时间内的展示次数、点击次数和点击率等。</p>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="f_as" aria-labelledby="f_as_tab">
+            <div>
+              <h4>一、如何发布广告？</h4>
+              <p>登录后，点击“广告主”菜单中的“发布广告”，输入广告的相关信息，最后制定广告预算，点击“完成”即可完成一个广告的创建过程。</p>
+              <h4>二、广告如何收费？</h4>
+              <p>分为每千次展示收费和单次点击收费，收费基准根据广告主创建的广告内容、制定的投放目标而给定。</p>
+              <h4>三、付款方式？</h4>
+              <p>支付宝、银联、对公账户转账。</p>
+              <h4>四、如何查看广告效果？</h4>
+              <p>登录平台，进入“广告列表”查看“广告统计”，可以看到自己的广告展示次数、点击次数和点击率等。</p>
+              <h4>五、广告种类？</h4>
+              <p>平台提供插屏广告、开屏广告、横幅广告、信息流广告等展现模式。</p>
+              <h4>六、为什么注册邮箱没收到激活邮件？</h4>
+              <p>一些邮箱可能会把我们的邮件归类到广告邮件或者垃圾邮件，您可以去那里找一下。</p>
+              <h4>七、完善信息时选择个人开发者和公司开发者有什么区别？</h4>
+              <p>公司开发者,建议注册公司账号。公司开发者会走相应合同流程，独家合作或者深度合作可相应提高分成比例。另外，关于发票方面，如果用个人账号注册提供不了相应发票需要按劳务报酬所得相应代扣税费，而公司开发者提供满足条件发票即可全额打款不再扣税。</p>
+              <h4>八、注册填写信息后需要等通过审核才能使用平台吗？</h4>
+              <p>填写完信息之后就可以使用平台，身份审核主要是在提款时才会有影响。</p>
+              <h4>九、嵌入广告的时候可以选择哪些广告类型？</h4>
+              <p>目前有开屏广告、插屏广告、信息流广告和横幅广告。您可以根据需要选择其中的一种或多种广告类型。</p>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="f_puns" aria-labelledby="f_puns_tab">
+            <div>
+              <h4>一、应用审核标准</h4>
+              <p>基本原则：</p>
+              <p>1. 合作应用承诺严格遵守《全国人民代表大会常务委员会关于维护互联网安全的决定》、《中华人民共和国电信条例》、《互联网信息服务管理办法》等相关法律法规的有关规定。</p>
+              <p>2. 合作应用承诺严格遵守《葵果广告平台提交应用条款》的有关规定。</p>
+              <p>3. 未通过审核的应用只能获得测试广告（不计费），通过审核后可以获得正式广告。</p>
+              <p>4. 应用通过审核后，如果在合作过程中发现有违规行为，葵果广告平台有权立即暂停合作并暂时冻结账户。</p>
+              <p>对于情节较轻者，修正后继续合作并正常结算；对于情节严重或者存在恶意违规行为者，将冻结账户，不予提现；对于情节特别严重者，将追究其法律责任，并追缴违法所得。</p>
+              <p>广告相关：</p>
+              <p>1. 在应用内的可见界面未能看到广告条的应用，会被拒绝。</p>
+              <p>2. 广告条大小、色彩、形状等未按标准设置的应用，可能会被拒绝。</p>
+              <p>3. 广告条被遮挡导致显示不完全的应用，会被拒绝。</p>
+              <p>4. 广告条遮挡界面操作元素可能导致用户误点击的应用，会被拒绝。</p>
+              <p>5. 开发者对应用做了更新沿用原appid和密钥，未重新上传我们平台审核即上传商店，导致广告不能正常展示点击，会被拒绝。</p>
+              <p>6. 界面操作元素过小或与广告条位置过近，容易导致误点击的应用，会被拒绝。</p>
+              <p>7. 存在诱导或引导用户对广告条进行操作的应用，会被拒绝。</p>
+              <p>8. 未按照SDK安装文档进行代码嵌入或资源导入的应用，会被拒绝。</p>
+              <p>功能相关：</p>
+              <p>1. 运行后短时间内即崩溃的应用，会被拒绝。</p>
+              <p>2. 应用中存在潜在漏洞可能带来安全隐患的的应用，会被拒绝。</p>
+              <p>3. 运行中多次出现致命错误导致进程终止的应用，会被拒绝。</p>
+              <p>4. 应用性能不稳定，BUG过多，频繁出现不可用情况，连接超时率过高的应用可能会被拒绝。</p>
+              <p>5. 功能与申请时描述不符的应用，会被拒绝。</p>
+              <p>6. 功能虚假或有欺骗性没有明确功能说明的应用，会被拒绝。</p>
+              <p>7. 没有显著用途或者无法提供持久的娱乐价值的应用，可能会被拒绝。</p>
+              <p>8. 套用模板批量生成的应用群，可能会被拒绝，同时上传大量相似功能应用的开发者可能会被暂时停用账号。</p>
+              <p>内容相关：</p>
+              <p>1. 应用中或者应用允许用户生产的内容中，存在任何违反国家相关法律法规的有关规定的内容，会被拒绝。</p>
+              <p>2. 应用中的内容过于简单，比如仅仅是图片的简单展示，可能会被拒绝，被拒绝的可能性与内容获取的容易程度成正比。</p>
+              <p>3. 应用中含有葵果广告平台主要竞争对手的宣传内容的，可能会被拒绝。</p>
+              <p>4. 应用中含有未经葵果广告平台确认的广告，可能会被拒绝。</p>
+              <p>用户体验相关：</p>
+              <p>1. 应用功能可玩性、实用性、易用性差的应用，会被拒绝。</p>
+              <p>2. 滥用动态、新鲜事、请求，造成用户不好的体验的应用，会被拒绝。</p>
+              <p>3. 应用中存在强制用户操作，如强制用户填写邮箱、手机号、强制邀请好友等，会被拒绝。</p>
+              <p>4. 应用中存在恶意跳转链接，可能导致用户使用中隐私或财产等受到损失的应用，会被拒绝。</p>
+              <p>版权相关：</p>
+              <p>1. 应用程序所采用的界面素材，包括程序图标、界面图标、界面UI元素等，未经他人授权便私自使用，将会在审核时被拒绝，或版权所有方提出质疑后终止合作。</p>
+              <p>2. 通过使用特殊技术手段对他人程序进行反编译，破解，逆向工程等而完成的应用，将会在审核时被拒绝，或版权所有方提出质疑后终止合作。</p>
+              <p>3. 对国外应用进行界面的汉化重新打包后发布，并进行广告条嵌入，可能会在审核时被拒绝，或版权所有方提出质疑后终止合作。</p>
+              <p>4. 使用常见的示例源程序进行开发而完成的应用，可能会被拒绝。</p>
+              <p>其他：</p>
+              <p>葵果广告平台的账户注册信息不完整，可能会被拒绝。</p>
+              <h4>二、广告审核标准</h4>
+              <p>广告素材：</p>
+              <p>1.广告图片质量不清晰，广告尺寸未按标准设置的广告，可能会被拒绝。</p>
+              <p>2.广告内容存在色情内容或任何违反国家相关法律法规的有关规定的内容，会被拒绝。</p>
+              <p>广告链接：</p>
+              <p>填写的链接是不可以下载的链接地址或者是与应用广告无关的链接地址，会被拒绝。</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="white-main-footer">
+      <div>
+        <div>
+          <ul>
+            <li><a>下载中心</a></li>
+            <li><a>隐私政策</a></li>
+            <li><a>服务条款</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><a>加入我们</a></li>
+            <li><a>联系我们</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Copyright©</li>
+            <li>联系地址：上海市闵行区秀文路868号西子国际中心</li>
+          </ul>
+        </div>
+        <img src="img/houtaiicon_w.png">
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flag.js"></script>
+    <script>
+      window.onload = function (){
+        var a = $(window).height() -230;
+        $(".white-shild").css("min-height",a);
+      }
+     $("#header_nav > li").ScrollNav({
+        scrollObj:"#header_nav > .scrollObj", //滑动的对象
+        speed:"fast" //速度
+      });
+    </script>
+  </body>
+</html>

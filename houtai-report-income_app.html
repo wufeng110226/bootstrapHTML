@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台操作平台</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/houtai.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="container" class="clearfix">
+      <div class="black-sidebar">
+          <div class="black-logo">
+            <a class="demologo"><img src="img/houtaiicon_w.png"></a>
+          </div>
+          <ul class="nav">
+            <li>
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-home"></i>
+                <span>后台首页</span>
+              </a>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-th"></i>
+                <span>应用中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>应用列表</a>
+                </li>
+                <li>
+                  <a>详细信息</a>
+                </li>
+                <li>
+                  <a>广告设置</a>
+                </li>
+                <li>
+                  <a>添加应用</a>
+                </li>
+                <li>
+                  <a>SDK下载</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-signal"></i>
+                <span>数据中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a class="active">收入报表</a>
+                </li>
+                <li>
+                  <a>应用报表</a>
+                </li>
+                <li>
+                  <a>用户报表</a>
+                </li>
+                <li>
+                  <a>统计</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-yen"></i>
+                <span>财务中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>财务记录</a>
+                </li>
+                <li>
+                  <a>通知设置</a>
+                </li>
+                <li>
+                  <a>申请提款</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-user"></i>
+                <span>个人中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>基本信息</a>
+                </li>
+                <li>
+                  <a>财务信息设置</a>
+                </li>
+                <li>
+                  <a>修改密码</a>
+                </li>
+                <li>
+                  <a>我的消息</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      <div class="black-main">
+        <div class="black-main-header">
+          <ul class="clearfix">
+            <li><a><i class="glyphicon glyphicon-user"></i>wufeng030@qq.com</a></li>
+            <li><a><i class="glyphicon glyphicon-off"></i>退出</a></li>
+          </ul>
+        </div>
+        <div class="black-main-body">
+          <div id="houtai-index">
+            <div class="info-shell">
+              <h3>收入概况</h3>
+              <div class="counting-methods">
+                <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>按日期统计</button>
+                <button type="button" class="btn btn-default btn-lg cm_hover"><span class="glyphicon glyphicon-th" aria-hidden="true"></span>按应用统计</button>
+              </div>
+            </div>
+            <div class="row all-statistics">
+              <div class="col-md-3">
+                <div>
+                  <h3>总收入</h3>
+                  <p>￥1.120</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div>
+                  <h3>积分广告总收入</h3>
+                  <p>￥1.120</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div>
+                  <h3>无积分广告总收入</h3>
+                  <p>￥1.120</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div>
+                  <h3>视频广告总收入</h3>
+                  <p>￥1.120</p>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-striped table-bordered table-hover xx-table">
+                <caption class="clearfix">
+                    <h2 class="list-head"><i class="glyphicon glyphicon-list"></i><span>应用详细收入列表</span></h2>
+                    <div class="date-chouse">
+                      <button id="appday7" type="button" class="btn btn-default">7天</button>
+                      <button id="appday30" type="button" class="btn btn-default">30天</button>
+                      <button id="appday60" type="button" class="btn btn-default">60天</button>
+                      <input class="date-before" size="16" type="text" value="" data-date="" data-date-format="yyyy-mm-dd" data-link-format="yyyy-mm-dd">
+                      &nbsp;-&nbsp;
+                      <input class="date-after" size="16" type="text" value="" data-date="" data-date-format="yyyy-mm-dd" data-link-format="yyyy-mm-dd">
+                      <button type="button" class="btn btn-default a-custom-btn">搜索</button>
+                    </div>
+                </caption>
+                <thead>
+                  <tr>
+                    <th rowspan="2">应用名称</th>
+                    <th rowspan="2">总收入</th>
+                    <th colspan="2">积分广告收入</th>
+                    <th colspan="3">无积分广告收入</th>
+                    <th rowspan="2">视频广告收入</th>
+                  </tr>
+                  <tr>
+                    <th>积分墙收入</th>
+                    <th>积分插屏收入</th>
+                    <th>广告条收入</th>
+                    <th>插屏广告收入</th>
+                    <th>自定义广告收入</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>钱啊</td>
+                    <td>￥0.000</td>
+                    <td>￥5.460</td>
+                    <td>￥0.000</td>
+                    <td>￥0.000</td>
+                    <td>￥5.460</td>
+                    <td>￥0.000</td>
+                    <td>￥0.000</td>
+                  </tr>
+                  <tr>
+                    <td>葵果</td>
+                    <td>￥133.175</td>
+                    <td>￥133.175</td>
+                    <td>￥0.000</td>
+                    <td>￥0.000</td>
+                    <td>￥0.000</td>
+                    <td>￥0.000</td>
+                    <td>￥0.000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="black-main-footer">
+          <div>
+            <div class="footer-nav">
+              <a target="_blank">关于我们</a>
+              <a target="_blank">合作伙伴</a>
+              <a target="_blank">下载中心</a>
+              <a target="_blank">加入我们</a>
+              <a target="_blank">联系我们</a>
+              <a target="_blank">条款规定</a>
+              <a target="_blank">网站地图</a>
+            </div>
+            <div id="copyright">
+              <span>Copyright © 2015 All Rights Reserved. 版权所有  粤ICP备0000000000号</span>
+              <a href="" target="_blank" style="margin-left:10px;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="js/flag.js"></script>
+    <script>
+      window.onload = function (){
+        checkHeight();
+      }
+
+      $('.date-before').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+      });
+      $('.date-after').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+      });
+    </script>
+  </body>
+</html>

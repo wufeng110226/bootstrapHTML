@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台操作平台</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/houtai.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="container" class="clearfix">
+      <div class="black-sidebar">
+          <div class="black-logo">
+            <a class="demologo"><img src="img/houtaiicon_w.png"></a>
+          </div>
+          <ul class="nav">
+            <li>
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-home"></i>
+                <span>后台首页</span>
+              </a>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-th"></i>
+                <span>应用中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>应用列表</a>
+                </li>
+                <li>
+                  <a>详细信息</a>
+                </li>
+                <li>
+                  <a class="active">广告设置</a>
+                </li>
+                <li>
+                  <a>添加应用</a>
+                </li>
+                <li>
+                  <a>SDK下载</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-signal"></i>
+                <span>数据中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>收入报表</a>
+                </li>
+                <li>
+                  <a>应用报表</a>
+                </li>
+                <li>
+                  <a>用户报表</a>
+                </li>
+                <li>
+                  <a>统计</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-yen"></i>
+                <span>财务中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>财务记录</a>
+                </li>
+                <li>
+                  <a>通知设置</a>
+                </li>
+                <li>
+                  <a>申请提款</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-user"></i>
+                <span>个人中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>基本信息</a>
+                </li>
+                <li>
+                  <a>财务信息设置</a>
+                </li>
+                <li>
+                  <a>修改密码</a>
+                </li>
+                <li>
+                  <a>我的消息</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      <div class="black-main">
+        <div class="black-main-header">
+          <ul class="clearfix">
+            <li><a><i class="glyphicon glyphicon-user"></i>wufeng030@qq.com</a></li>
+            <li><a><i class="glyphicon glyphicon-off"></i>退出</a></li>
+          </ul>
+        </div>
+        <div class="black-main-body">
+          <div id="houtai-appdetail">
+            <div class="appdetail-shell">
+              <div class="btn-group choose-app">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default1<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">adasdasdasdasd</a></li>
+                  <li><a href="#">12123</a></li>
+                  <li><a href="#">我勒个去我勒个去我勒个去</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-default btn-lg a-custom-btn"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加应用</button>
+            </div>
+            <div class="advertisement-tab">
+                <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a href="#ad_jifenqiang" aria-controls="ad_jifenqiang" role="tab" data-toggle="tab">积分墙广告设置</a></li>
+                <!-- <li role="presentation"><a href="#ad_shipin" aria-controls="ad_shipin" role="tab" data-toggle="tab">视频广告设置</a></li> -->
+                <li role="presentation"><a href="#ad_guolv" aria-controls="ad_guolv" role="tab" data-toggle="tab">广告过滤设置</a></li>
+                <li role="presentation"><a href="#ad_onlinecanshu" aria-controls="ad_onlinecanshu" role="tab" data-toggle="tab">在线参数设置</a></li>
+              </ul>
+                <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="ad_jifenqiang">
+
+                  <form action="">
+                    <ul class="houtai-form">
+                      <li>
+                        <h4>虚拟货币设置</h4>
+                        <label>虚拟货币单位：</label>
+                        <span><input type="text" class="form-control trim-input" value="积分"></span>
+                      </li>
+                      <li>
+                        <label>应用货币汇率：</label>
+                        <span><input type="text" class="form-control trim-input" value="60"></span>
+                        <span class="appdetail-hint">(虚拟货币与人民币的折算率，须为正整数，建议100倍数的汇率，设置过小会导致用户获取不到少额的虚拟货币)</span>
+                      </li>
+                      <li>
+                        <h4>积分广告回调方式设置</h4>
+                        <label>积分回调方式：</label>
+                        <span class="d-apptype">
+                          <label><input id="" name="ad-jfcallback-type" type="radio" value="1">客户端回调</label>
+                          <label><input id="" name="ad-jfcallback-type" type="radio" value="2">服务器端回调</label>
+                        </span>
+                      </li>
+                      <li>
+                        <label>服务器地址：</label>
+                        <span><input type="text" class="form-control trim-input" value="" style="width:400px !important;"><button type="button" class="btn btn-default a-custom-btn">生成密钥</button></span>
+                        <span class="appdetail-hint">(示例：http://www.youku.com)</span>
+                      </li>
+                      <li>
+                        <label>服务器密钥：</label>
+                        <span>sdklfjsklfjsdkl</span>
+                      </li>
+                      <li>
+                        <h4>余额显示设置</h4>
+                        <label>积分回调方式：</label>
+                        <span class="d-apptype">
+                          <label><input id="" name="ad-yue-type" type="radio" value="1">开</label>
+                          <label><input id="" name="ad-yue-type" type="radio" value="2">关</label>
+                        </span>
+                      </li>
+                    </ul>
+                    <div class="tj-button">
+                      <button type="button" class="btn btn-default btn-lg a-custom-btn">确认保存</button>
+                    </div>
+                  </form>
+
+
+                </div>
+                <!-- <div role="tabpanel" class="tab-pane" id="ad_shipin">
+
+                  <form action="">
+                    <ul class="houtai-form">
+                      <li>
+                        <h4>视频广告积分设置</h4>
+                        <label>积分模式：</label>
+                        <span class="d-apptype">
+                          <label><input id="" name="ad-jifen-type" type="radio" value="1">开</label>
+                          <label><input id="" name="ad-jifen-type" type="radio" value="2">关</label>
+                        </span>
+                      </li>
+                      <li>
+                        <h4>视频广告回调方式设置</h4>
+                        <label>回调方式：</label>
+                        <span class="d-apptype">
+                          <label><input id="" name="ad-spcallback-type" type="radio" value="1">客户端回调</label>
+                          <label><input id="" name="ad-spcallback-type" type="radio" value="2">服务器端回调</label>
+                        </span>
+                      </li>
+                    </ul>
+                    <div class="tj-button">
+                      <button type="button" class="btn btn-default btn-lg a-custom-btn">确认保存</button>
+                    </div>
+                  </form>
+
+                </div> -->
+                <div role="tabpanel" class="tab-pane" id="ad_guolv">
+
+                  <form action="">
+                    <ul class="houtai-form">
+                      <li>
+                        <h4>指定广告标签过滤</h4>
+                        <label>应用类：</label>
+                        <span class="d-apptype">
+                          <label><input id="" type="checkbox" value="1">金融理财</label>
+                          <label><input id="" type="checkbox" value="2">购物电商</label>
+                          <label><input id="" type="checkbox" value="3">丽人母婴</label>
+                          <label><input id="" type="checkbox" value="4">医疗健康</label>
+                          <label><input id="" type="checkbox" value="5">健身健美</label>
+                          <label><input id="" type="checkbox" value="6">体育运动</label>
+                          <label><input id="" type="checkbox" value="7">读书阅读</label>
+                          <label><input id="" type="checkbox" value="8">交通导航</label>
+                          <label><input id="" type="checkbox" value="9">摄影摄像</label>
+                          <label><input id="" type="checkbox" value="10">社交办公</label>
+                          <label><input id="" type="checkbox" value="11">网赚手赚</label>
+                        </span>
+                      </li>
+                      <li>
+                        <label>游戏类：</label>
+                        <span class="d-apptype">
+                          <label><input id="" type="checkbox" value="1">角色扮演</label>
+                          <label><input id="" type="checkbox" value="2">卡牌游戏</label>
+                          <label><input id="" type="checkbox" value="3">动作游戏</label>
+                          <label><input id="" type="checkbox" value="4">休闲益智</label>
+                          <label><input id="" type="checkbox" value="5">体育游戏</label>
+                          <label><input id="" type="checkbox" value="6">飞行射击</label>
+                          <label><input id="" type="checkbox" value="7">街机游戏</label>
+                          <label><input id="" type="checkbox" value="8">桌面游戏</label>
+                          <label><input id="" type="checkbox" value="9">骰子游戏</label>
+                          <label><input id="" type="checkbox" value="10">音乐游戏</label>
+                          <label><input id="" type="checkbox" value="11">小游戏</label>
+                        </span>
+                      </li>
+                      <li>
+                        <h4>指定广告过滤</h4>
+                        <label>积分墙广告：</label>
+                        <span class="d-apptype">
+                          <a class="btn btn-default upload-btn">查看列表</a>
+                        </span>
+                      </li>
+                    </ul>
+                    <div class="tj-button">
+                      <button type="button" class="btn btn-default btn-lg a-custom-btn">确认保存</button>
+                    </div>
+                  </form>
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="ad_onlinecanshu">未开放</div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="black-main-footer">
+          <div>
+            <div class="footer-nav">
+              <a target="_blank">关于我们</a>
+              <a target="_blank">合作伙伴</a>
+              <a target="_blank">下载中心</a>
+              <a target="_blank">加入我们</a>
+              <a target="_blank">联系我们</a>
+              <a target="_blank">条款规定</a>
+              <a target="_blank">网站地图</a>
+            </div>
+            <div id="copyright">
+              <span>Copyright © 2015 All Rights Reserved. 版权所有  粤ICP备0000000000号</span>
+              <a href="" target="_blank" style="margin-left:10px;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flag.js"></script>
+    <script>
+     window.onload = function (){
+        checkHeight();
+        chouse_app();
+      }
+    </script>
+  </body>
+</html>

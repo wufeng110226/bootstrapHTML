@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台操作平台</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/houtai.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="container" class="clearfix">
+      <div class="black-sidebar">
+          <div class="black-logo">
+            <a class="demologo"><img src="img/houtaiicon_w.png"></a>
+          </div>
+          <ul class="nav">
+            <li>
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-home"></i>
+                <span>后台首页</span>
+              </a>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-th"></i>
+                <span>应用中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>应用列表</a>
+                </li>
+                <li>
+                  <a>详细信息</a>
+                </li>
+                <li>
+                  <a>广告设置</a>
+                </li>
+                <li>
+                  <a>添加应用</a>
+                </li>
+                <li>
+                  <a>SDK下载</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-signal"></i>
+                <span>数据中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a class="active">收入报表</a>
+                </li>
+                <li>
+                  <a>应用报表</a>
+                </li>
+                <li>
+                  <a>用户报表</a>
+                </li>
+                <li>
+                  <a>统计</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-yen"></i>
+                <span>财务中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>财务记录</a>
+                </li>
+                <li>
+                  <a>通知设置</a>
+                </li>
+                <li>
+                  <a>申请提款</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-user"></i>
+                <span>个人中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>基本信息</a>
+                </li>
+                <li>
+                  <a>财务信息设置</a>
+                </li>
+                <li>
+                  <a>修改密码</a>
+                </li>
+                <li>
+                  <a>我的消息</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      <div class="black-main">
+        <div class="black-main-header">
+          <ul class="clearfix">
+            <li><a><i class="glyphicon glyphicon-user"></i>wufeng030@qq.com</a></li>
+            <li><a><i class="glyphicon glyphicon-off"></i>退出</a></li>
+          </ul>
+        </div>
+        <div class="black-main-body">
+          <div id="houtai-index">
+            <div class="info-shell">
+              <h3>收入概况</h3>
+              <div class="counting-methods">
+                <button type="button" class="btn btn-default btn-lg cm_hover"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>按日期统计</button>
+                <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-th" aria-hidden="true"></span>按应用统计</button>
+              </div>
+            </div>
+            <div class="row all-statistics">
+              <div class="col-md-3">
+                <div>
+                  <h3>总收入</h3>
+                  <p>￥1.120</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div>
+                  <h3>积分广告总收入</h3>
+                  <p>￥1.120</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div>
+                  <h3>无积分广告总收入</h3>
+                  <p>￥1.120</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div>
+                  <h3>视频广告总收入</h3>
+                  <p>￥1.120</p>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive chart_head">
+              <table class="table table-striped table-bordered table-hover xx-table">
+                <caption class="clearfix">
+                    <h2 class="list-head"><i class="glyphicon glyphicon-list"></i><span>收入趋势图</span></h2>
+                    <div class="date-chouse">
+                      <button id="indexday7" type="button" class="btn btn-default">7天</button>
+                      <button id="indexday30" type="button" class="btn btn-default">30天</button>
+                      <button id="indexday60" type="button" class="btn btn-default">60天</button>
+                      <input class="date-before" size="16" type="text" value="" data-date="" data-date-format="yyyy-mm-dd" data-link-format="yyyy-mm-dd">
+                      &nbsp;-&nbsp;
+                      <input class="date-after" size="16" type="text" value="" data-date="" data-date-format="yyyy-mm-dd" data-link-format="yyyy-mm-dd">
+                      <button type="submit" class="btn btn-default a-custom-btn">搜索</button>
+                    </div>
+                </caption>
+              </table>
+            </div>
+            <div class="chart_chouse_tab clearfix">
+              <ul class="clearfix">
+                <li id="chart_revenues" class="active">总收入概况</li>
+                <li id="chart_ia_revenues">积分广告收入</li>
+                <li id="chart_nia_revenues">无积分广告收入</li>
+              </ul>
+            </div>
+            <div id="index_tb_main" style="height:400px"></div>
+            <div class="table-responsive">
+              <table class="table table-striped table-bordered table-hover xx-table">
+                <caption class="clearfix">
+                    <h2 class="list-head"><i class="glyphicon glyphicon-list"></i><span>详细收入列表<b>(为您展示最近7天的数据)</b></span></h2>
+                </caption>
+                <thead>
+                  <tr>
+                    <th>日期</th>
+                    <th>总收入</th>
+                    <th>积分广告收入</th>
+                    <th>无积分广告收入</th>
+                    <th>视频广告收入</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2015-12-04</td>
+                    <td>￥5.460</td>
+                    <td>￥5.460</td>
+                    <td>￥0.000</td>
+                    <td>￥0.000</td>
+                  </tr>
+                  <tr>
+                    <td>2015-12-03</td>
+                    <td>￥15.470</td>
+                    <td>￥15.470</td>
+                    <td>￥0.000</td>
+                    <td>￥0.000</td>
+                  </tr>
+                  <tr>
+                    <td>2015-12-02</td>
+                    <td>￥17.080</td>
+                    <td>￥17.080</td>
+                    <td>￥0.000</td>
+                    <td>￥0.000</td>
+                  </tr>
+                  <tr>
+                    <td>2015-12-01</td>
+                    <td>￥13.580</td>
+                    <td>￥13.580</td>
+                    <td>￥0.000</td>
+                    <td>￥0.000</td>
+                  </tr>
+                  <tr>
+                    <td>2015-11-30</td>
+                    <td>￥47.285</td>
+                    <td>￥47.285</td>
+                    <td>￥0.000</td>
+                    <td>￥0.000</td>
+                  </tr>
+                  <tr>
+                    <td>2015-11-30</td>
+                    <td>￥47.285</td>
+                    <td>￥47.285</td>
+                    <td>￥0.000</td>
+                    <td>￥0.000</td>
+                  </tr>
+                  <tr>
+                    <td>2015-11-30</td>
+                    <td>￥47.285</td>
+                    <td>￥47.285</td>
+                    <td>￥0.000</td>
+                    <td>￥0.000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="black-main-footer">
+          <div>
+            <div class="footer-nav">
+              <a target="_blank">关于我们</a>
+              <a target="_blank">合作伙伴</a>
+              <a target="_blank">下载中心</a>
+              <a target="_blank">加入我们</a>
+              <a target="_blank">联系我们</a>
+              <a target="_blank">条款规定</a>
+              <a target="_blank">网站地图</a>
+            </div>
+            <div id="copyright">
+              <span>Copyright © 2015 All Rights Reserved. 版权所有  粤ICP备0000000000号</span>
+              <a href="" target="_blank" style="margin-left:10px;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="js/flag.js"></script>
+    <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+    <script>
+      window.onload = function (){
+        checkHeight();
+        addactive();
+      }
+/*日期选择器开始*/
+      $('.date-before').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+      });
+      $('.date-after').datetimepicker({
+        language:  'zh-CN',
+        weekStart: 1,
+        todayBtn:  1,
+        autoclose: 1,
+        todayHighlight: 1,
+        startView: 2,
+        minView: 2,
+        forceParse: 0
+      });
+/*日期选择器结束*/
+/*图表开始*/
+require.config({
+      paths: {
+          echarts: 'http://echarts.baidu.com/build/dist'
+      }
+  });
+require(
+    [
+        'echarts',
+        'echarts/chart/line' // 使用柱状图就加载bar模块，按需加载
+    ],
+    function (ec) {
+        // 基于准备好的dom，初始化echarts图表
+        var myChart = ec.init(document.getElementById('index_tb_main'));
+            tdate = ['2015-12-17','2015-12-18','2015-12-19','2015-12-20','2015-12-21','2015-12-22','2015-12-23']
+            tdate30 = ['2015-12-17','2015-12-18','2015-12-19','2015-12-20','2015-12-21','2015-12-22','2015-12-23','2015-12-24','2015-12-25','2015-12-26','2015-12-27','2015-12-28','2015-12-29','2015-12-30','2015-12-31','2016-01-01','2016-01-02','2016-01-03','2016-01-04','2016-01-05','2016-01-06','2016-01-07','2016-01-08','2016-01-09','2016-01-10','2016-01-11','2016-01-12','2016-01-13','2016-01-14','2016-01-15']
+            tdate60 = ['2015-12-17','2015-12-18','2015-12-19','2015-12-20','2015-12-21','2015-12-22','2015-12-23','2015-12-24','2015-12-25','2015-12-26','2015-12-27','2015-12-28','2015-12-29','2015-12-30','2015-12-31','2016-01-01','2016-01-02','2016-01-03','2016-01-04','2016-01-05','2016-01-06','2016-01-07','2016-01-08','2016-01-09','2016-01-10','2016-01-11','2016-01-12','2016-01-13','2016-01-14','2016-01-15','2015-12-17','2015-12-18','2015-12-19','2015-12-20','2015-12-21','2015-12-22','2015-12-23','2015-12-24','2015-12-25','2015-12-26','2015-12-27','2015-12-28','2015-12-29','2015-12-30','2015-12-31','2016-01-01','2016-01-02','2016-01-03','2016-01-04','2016-01-05','2016-01-06','2016-01-07','2016-01-08','2016-01-09','2016-01-10','2016-01-11','2016-01-12','2016-01-13','2016-01-14','2016-01-15']
+            vdate = [10, 12, 21, 54, 260, 830, 710]
+            vdate30 = [10, 12, 21, 54, 260, 830, 710,10, 12, 21, 54, 260, 830, 710,10, 12, 21, 54, 260, 830, 710,10, 12, 21, 54, 260, 830, 710,10, 12]
+            vdate60 = [10, 12, 21, 54, 260, 830, 710,10, 12, 21, 54, 260, 830, 710,102, 123, 211, 543, 210, 130, 310,120, 32, 21, 54, 260, 830, 710,10, 12,10, 12, 21, 54, 260, 830, 310,10, 14, 21, 54, 230, 630, 710,10, 12, 21, 54, 250, 830, 710,140, 12, 21, 54, 2360, 8230, 710,10, 12]
+      option = {
+            /*title : {
+                text: '某楼盘销售情况',
+                subtext: '纯属虚构'
+            },*/
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['积分广告收入','无积分广告收入'],
+                x:'left',
+                y:'bottom'
+            },
+            toolbox: {
+                show : true,
+                /*feature : {
+                    mark : {show: true},
+                    dataView : {show: true, readOnly: true},
+                    magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                    restore : {show: true},
+                    saveAsImage : {show: true}
+                }*/
+            },
+            calculable : false,
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : tdate
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'积分广告收入',
+                    type:'line',
+                    /*smooth:true,
+                    itemStyle: {normal: {areaStyle: {type: 'default'}}},*/
+                    /*markPoint: {clickable: false},*/
+                    data:vdate
+                },
+                {
+                    name:'无积分广告收入',
+                    type:'line',
+                    /*smooth:true,
+                    itemStyle: {normal: {areaStyle: {type: 'default'}}},*/
+                    data:[30, 182, 434, 791, 390, 30, 10]
+                }
+            ]
+        };
+
+        option2 = {
+            /*title : {
+                text: '某楼盘销售情况',
+                subtext: '纯属虚构'
+            },*/
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['积分广告收入'/*,'无积分广告收入'*/],
+                x:'left',
+                y:'bottom'
+            },
+            toolbox: {
+                show : true,
+                /*feature : {
+                    mark : {show: true},
+                    dataView : {show: true, readOnly: true},
+                    magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                    restore : {show: true},
+                    saveAsImage : {show: true}
+                }*/
+            },
+            calculable : false,
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : tdate30
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'积分广告收入',
+                    type:'line',
+                    /*smooth:true,
+                    itemStyle: {normal: {areaStyle: {type: 'default'}}},*/
+                    /*markPoint: {clickable: false},*/
+                    data:vdate30
+                }/*,
+                {
+                    name:'无积分广告收入',
+                    type:'line',
+                    smooth:true,
+                    itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                    data:[30, 182, 434, 791, 390, 30, 10]
+                }*/
+            ]
+        };
+
+        option3 = {
+            /*title : {
+                text: '某楼盘销售情况',
+                subtext: '纯属虚构'
+            },*/
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:[/*'积分广告收入',*/'无积分广告收入'],
+                x:'left',
+                y:'bottom'
+            },
+            toolbox: {
+                show : true,
+                /*feature : {
+                    mark : {show: true},
+                    dataView : {show: true, readOnly: true},
+                    magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                    restore : {show: true},
+                    saveAsImage : {show: true}
+                }*/
+            },
+            calculable : false,
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : tdate
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                /*{
+                    name:'积分广告收入',
+                    type:'line',
+                    smooth:true,
+                    itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                    markPoint: {clickable: false},
+                    data:vdate60
+                },*/
+                {
+                    name:'无积分广告收入',
+                    type:'line',
+                    /*smooth:true,
+                    itemStyle: {normal: {areaStyle: {type: 'default'}}},*/
+                    data:/*[30, 182, 434, 791, 390, 30, 10]*/vdate
+                }
+            ]
+        };
+
+        myChart.setOption(option);
+        $("#chart_revenues").click(function(){
+          myChart.clear();
+          myChart.setOption(option);
+          /*myChart.setOption({xAxis:[{data:tdate}], series:[{data:vdate}]});*/
+        });
+        $("#chart_ia_revenues").click(function(){
+          myChart.clear();
+          myChart.setOption(option2);
+          /*myChart.setOption({xAxis:[{data:tdate30}], series:[{data:vdate30}]});*/
+        });
+        $("#chart_nia_revenues").click(function(){
+          myChart.clear();
+          myChart.setOption(option3);
+          /*myChart.setOption({xAxis:[{data:tdate60}], series:[{data:vdate60}]});*/
+        });
+            }
+    );
+/*图表结束*/
+    </script>
+  </body>
+</html>

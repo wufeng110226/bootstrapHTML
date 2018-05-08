@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台操作平台</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/houtai.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="container" class="clearfix">
+      <div class="black-sidebar">
+          <div class="black-logo">
+            <a class="demologo"><img src="img/houtaiicon_w.png"></a>
+          </div>
+          <ul class="nav">
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-knight"></i>
+                <span>广告管理</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a href="self-houtai-advert-admin.html">广告管理</a>
+                </li>
+                <li>
+                  <a>广告商管理</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-th"></i>
+                <span>CP管理</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a href="self-houtai-cp-manager.html">CP管理</a>
+                </li>
+                <li>
+                  <a href="self-houtai-cp-finance.html">财务信息</a>
+                </li>
+                <li>
+                  <a href="self-houtai-cp-member.html" class="active">团队成员信息</a>
+                </li>
+                <li>
+                  <a href="self-houtai-cp-app.html">应用审核</a>
+                </li>
+                <li>
+                  <a href="self-houtai-cp-drawing.html">提款信息</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-user"></i>
+                <span>平台PC管理</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>产品介绍</a>
+                </li>
+                <li>
+                  <a>新闻动态管理</a>
+                </li>
+                <li>
+                  <a>banner管理</a>
+                </li>
+                <li>
+                  <a>SDK管理</a>
+                </li>
+                <li>
+                  <a>用户管理</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      <div class="black-main">
+        <div class="black-main-header">
+          <ul class="clearfix">
+            <li><a><i class="glyphicon glyphicon-user"></i>wufeng030@qq.com</a></li>
+            <li><a><i class="glyphicon glyphicon-off"></i>退出</a></li>
+          </ul>
+        </div>
+        <div class="black-main-body">
+          <div id="houtai-index">
+            <div class="info-shell">
+              <h3>团队成员信息</h3>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-striped table-bordered table-hover xx-table">
+                <caption class="clearfix">
+                    <h2 class="list-head"><i class="glyphicon glyphicon-list"></i><span>成员列表</span></h2>
+                    <div class="date-chouse cp-man">
+                      <span>CP名称：</span><input class="form-control" size="16" type="text" value="">
+                      &nbsp;&nbsp;
+                      <span>成员姓名：</span><input class="form-control" size="16" type="text" value="">
+                      <span>审核状态：</span>
+                      <select class="ad-chouse-select" name="">
+                              <option value="">请选择</option>
+                              <option value="1">审核通过</option>
+                              <option value="2">审核驳回</option>
+                        </select>
+                      <button type="button" class="btn btn-default a-custom-btn">搜索</button>
+                    </div>
+                </caption>
+                <thead>
+                  <tr>
+                    <th>CP名称</th>
+                    <th>成员姓名</th>
+                    <th>证件号码</th>
+                    <th>证件类型</th>
+                    <th>身份证正面照</th>
+                    <th>身份证背面照</th>
+                    <th>审核状态</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>吴枫</td>
+                    <td>吴枫</td>
+                    <td>13098451515151515</td>
+                    <td>中国大陆身份证</td>
+                    <td class="cpid_img"><a><img src="img/id_front.png"></a></td>
+                    <td class="cpid_img"><a><img src="img/id_back.png"></a></td>
+                    <td><span class="label label-default">待审核中</span></td>
+                    <td>
+                      <span>
+                        <select class="ad-chouse-select cp_review" name="">
+                              <option value="">请选择</option>
+                              <option value="1">审核通过</option>
+                              <option value="2">审核驳回</option>
+                        </select>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>吴枫</td>
+                    <td>吴枫</td>
+                    <td>13098451515151515</td>
+                    <td>中国大陆身份证</td>
+                    <td class="cpid_img"><a><img src="img/id_front.png"></a></td>
+                    <td class="cpid_img"><a><img src="img/id_back.png"></a></td>
+                    <td><span class="label label-success">审核通过</span></td>
+                    <td>
+                      <span>
+                        <select class="ad-chouse-select cp_review" name="">
+                              <option value="">请选择</option>
+                              <option value="1">审核通过</option>
+                              <option value="2">审核驳回</option>
+                        </select>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>吴枫</td>
+                    <td>吴枫</td>
+                    <td>13098451515151515</td>
+                    <td>中国大陆身份证</td>
+                    <td class="cpid_img"><a><img src="img/id_front.png"></a></td>
+                    <td class="cpid_img"><a><img src="img/id_back.png"></a></td>
+                    <td><span class="label label-danger">审核驳回</span></td>
+                    <td>
+                      <span>
+                        <select class="ad-chouse-select cp_review" name="">
+                              <option value="">请选择</option>
+                              <option value="1">审核通过</option>
+                              <option value="2">审核驳回</option>
+                        </select>
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="black-main-footer">
+          <div>
+            <div class="footer-nav">
+              <a target="_blank">关于我们</a>
+              <a target="_blank">合作伙伴</a>
+              <a target="_blank">下载中心</a>
+              <a target="_blank">加入我们</a>
+              <a target="_blank">联系我们</a>
+              <a target="_blank">条款规定</a>
+              <a target="_blank">网站地图</a>
+            </div>
+            <div id="copyright">
+              <span>Copyright © 2015 All Rights Reserved. 版权所有  粤ICP备0000000000号</span>
+              <a href="" target="_blank" style="margin-left:10px;">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="modal bs-example-modal-sm cp_reject" id="" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+          <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p>请输入驳回理由：</p>
+                <textarea class="cptextarea" cols="34" rows="10" placeholder="不能为空" style="resize:none;"></textarea>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button id="dl" type="button" class="btn btn-primary">提交</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flag.js"></script>
+    <script>
+     window.onload = function (){
+        checkHeight();
+      }
+      $(".cp_review").change(function(){
+        if($(this).children('option:selected').val() == "2"){
+          //$('#login').modal('show');
+          $('.cp_reject').modal({backdrop: 'static', keyboard: false});
+        }
+      })
+    </script>
+  </body>
+</html>

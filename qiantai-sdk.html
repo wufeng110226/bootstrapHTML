@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>葵果前台门户首页</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/qiantai.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="container" class="white-shild clearfix">
+      <div id="white-header">
+        <div>
+          <a id="white-logo" class="clearfix" href=""><img src="img/houtaiicon_b.png"></a>
+          <span class="loginplug"><a href="qiantai-login.html">登录</a><i>/</i><a href="qiantai-register.html">注册</a></span>
+          <ul id="header_nav">
+            <li><a href="qiantai-index.html">首页</a></li>
+            <li><a href="qiantai-product.html">产品介绍</a></li>
+            <li class="current"><a href="qiantai-sdk.html">SDK下载</a></li>
+            <li><a href="qiantai-notice.html">葵果动态</a></li>
+            <li><a href="qiantai-faq.html">帮助中心</a></li>
+            <li class="scrollObj"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="white_main clearfix">
+        <div class="sdk_tit clearfix">
+          <h2>SDK下载</h2>
+          <p>在这里，您可以下载最新版本的葵果SDK，也可以下载葵果支持的各单一移动推广平台的SDK。<br>请您严格按照《SDK使用说明》植入SDK，如果遇到任何问题请参考“说明”中的问题汇总。当然，您也可以直接联系葵果
+技术支持。<br>葵果技术支持团队将竭诚为您服务</p>
+        </div>
+        <div class="sdk_shild clearfix">
+          <div>
+            <p><img src="img/iosicon.png"></p>
+            <p>葵果ios&nbsp;SDK及文档（Zip）</p>
+            <p><button type="button" class="btn btn-default btn-lg a-custom-btn downsdk_button">下载<span class="glyphicon glyphicon-save-file" aria-hidden="true"></span></button></p>
+            <p>版本：4.4.8&nbsp;大小：11.1M&nbsp;更新时间：2016-06-28</p>
+          </div>
+          <div>
+            <p><img src="img/androidicon.png"></p>
+            <p>葵果ios&nbsp;SDK及文档（Zip）</p>
+            <p><button type="button" class="btn btn-default btn-lg a-custom-btn downsdk_button">下载<span class="glyphicon glyphicon-save-file" aria-hidden="true"></span></button></p>
+            <p>版本：4.4.8&nbsp;大小：11.1M&nbsp;更新时间：2016-06-28</p>
+          </div>
+        </div>
+        <div class="sdkdown-que">
+          <p>注：详细了解如何在应用中嵌入SDK，建议在嵌入之前仔细阅读<a>SDK使用说明</a></p>
+          <p>注：嵌入SDK过程常见问题解决办法，建议在遇到问题之后先查阅文档<a>SDK常见问题</a></p>
+        </div>
+        <p class="qqonline"><strong>技术支持：</strong><img src="img/QQ.png"></p>
+      </div>
+
+    </div>
+
+    <div class="white-main-footer">
+      <div>
+        <div>
+          <ul>
+            <li><a>下载中心</a></li>
+            <li><a>隐私政策</a></li>
+            <li><a>服务条款</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><a>加入我们</a></li>
+            <li><a>联系我们</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Copyright©</li>
+            <li>联系地址：上海市闵行区秀文路868号西子国际中心</li>
+          </ul>
+        </div>
+        <img src="img/houtaiicon_w.png">
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flag.js"></script>
+    <script>
+      window.onload = function (){
+        var a = $(window).height() -230;
+        $(".white-shild").css({
+            "min-height":a,
+            "background":"#f5f5f5"
+          });
+      }
+     $("#header_nav > li").ScrollNav({
+        scrollObj:"#header_nav > .scrollObj", //滑动的对象
+        speed:"fast" //速度
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台操作平台</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/houtai.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="container" class="clearfix">
+      <div class="black-sidebar">
+          <div class="black-logo">
+            <a class="demologo"><img src="img/houtaiicon_w.png"></a>
+          </div>
+          <ul class="nav">
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-knight"></i>
+                <span>广告管理</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a href="self-houtai-advert-admin.html">广告管理</a>
+                </li>
+                <li>
+                  <a>广告商管理</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-th"></i>
+                <span>CP管理</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a href="self-houtai-cp-manager.html">CP管理</a>
+                </li>
+                <li>
+                  <a href="self-houtai-cp-finance.html">财务信息</a>
+                </li>
+                <li>
+                  <a href="self-houtai-cp-member.html">团队成员信息</a>
+                </li>
+                <li>
+                  <a href="self-houtai-cp-app.html" class="active">应用审核</a>
+                </li>
+                <li>
+                  <a href="self-houtai-cp-drawing.html">提款信息</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-user"></i>
+                <span>平台PC管理</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>产品介绍</a>
+                </li>
+                <li>
+                  <a>新闻动态管理</a>
+                </li>
+                <li>
+                  <a>banner管理</a>
+                </li>
+                <li>
+                  <a>SDK管理</a>
+                </li>
+                <li>
+                  <a>用户管理</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      <div class="black-main">
+        <div class="black-main-header">
+          <ul class="clearfix">
+            <li><a><i class="glyphicon glyphicon-user"></i>wufeng030@qq.com</a></li>
+            <li><a><i class="glyphicon glyphicon-off"></i>退出</a></li>
+          </ul>
+        </div>
+        <div class="black-main-body">
+          <div id="houtai-myinfo">
+            <div class="info-shell">
+              <h3>查看应用</h3>
+            </div>
+            <ul class="houtai-form">
+                <li>
+                  <label>应用名称：</label>
+                  <span><input class="form-control trim-input" type="text" value="钱啊" readonly="true"></span>
+                </li>
+                <li>
+                  <label>应用状态：</label>
+                  <span>
+                  <select class="ad-chouse-select cp_review" name="">
+                        <option value="0">请选择</option>
+                        <option value="1">审核通过</option>
+                        <option value="2">审核驳回</option>
+                  </select>
+                </span>
+                </li>
+                <li>
+                  <label>商店链接：</label>
+                  <span>
+                    <input type="text" placeholder="http://itunes.apple.com/" class="form-control trim-input" readonly="true">
+                  </span>
+                </li>
+                <li>
+                  <label>发布ID：</label>
+                  <span><input type="text" class="form-control trim-input" value="123123123123" readonly="true"></span>
+                </li>
+                <li>
+                  <label>应用密钥：</label>
+                  <span><input type="text" class="form-control trim-input" value="asdasdasda" readonly="true"></span>
+                </li>
+                <li>
+                  <label>应用类型：</label>
+                  <span><input class="form-control trim-input" type="text" readonly="true" value="[软件]多媒体软件"></span>
+                </li>
+                <li>
+                  <label>关键字：</label>
+                  <span><input class="form-control trim-input" type="text" value="多媒体软件" readonly="true"></span>
+                </li>
+                <li>
+                  <label>应用平台：</label>
+                  <span class="label label-success">ios</span><span class="label label-success">Android</span>
+                </li>
+                <li>
+                  <label style="float:left;">应用图标：</label>
+                  <span class="d-apptype">
+                    <p><img class="logo-realtime" src="img/default_cpicon.png"></p>
+                  </span>
+                </li>
+                <li>
+                  <label style="float:left;">应用截图：</label>
+                  <span class="d-apptype">
+                    <ul class="add_jietu">
+                      <li><img src="img/app_cut.jpg"></li>
+                      <li><img src="img/app_cut.jpg"></li>
+                      <li><img src="img/app_cut.jpg"></li>
+                      <li><img src="img/app_cut.jpg"></li>
+                      <li><img src="img/app_cut.jpg"></li>
+                    </ul>
+                  </span>
+                </li>
+
+                <li>
+                  <label style="float:left;">应用介绍：</label>
+                  <span>
+                    <textarea name="add_textarea" class="" cols="120" rows="5" readonly="true">钱啊是国内领先的流量分发渠道，用户下载APP试玩体验，即可获得相应的现金。分享给好友有提成收益。这是一款让你越来越有钱的APP！！载平台会根据应用的搜索数据为Apps量身定制最佳的搜索优化解决方案，开创了一种全新的最高效的应用推广方式。</textarea>
+                  </span>
+                </li>
+              </ul>
+            <div class="tj-button">
+              <button type="submit" class="btn btn-default btn-lg a-custom-btn">确认保存</button>
+            </div>
+          </div>
+        </div>
+        <div class="black-main-footer">
+          <div>
+            <div class="footer-nav">
+              <a target="_blank">关于我们</a>
+              <a target="_blank">合作伙伴</a>
+              <a target="_blank">下载中心</a>
+              <a target="_blank">加入我们</a>
+              <a target="_blank">联系我们</a>
+              <a target="_blank">条款规定</a>
+              <a target="_blank">网站地图</a>
+            </div>
+            <div id="copyright">
+              <span>Copyright © 2015 All Rights Reserved. 版权所有  粤ICP备0000000000号</span>
+              <a href="" target="_blank" style="margin-left:10px;">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="modal bs-example-modal-sm cp_reject" id="" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+          <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <p>请输入驳回理由：</p>
+                <textarea class="cptextarea" cols="34" rows="10" placeholder="不能为空" style="resize:none;"></textarea>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button id="dl" type="button" class="btn btn-primary">提交</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flag.js"></script>
+    <script>
+     window.onload = function (){
+        checkHeight();
+      }
+      $(".cp_review").change(function(){
+        if($(this).children('option:selected').val() == "2"){
+          //$('#login').modal('show');
+          $('.cp_reject').modal({backdrop: 'static', keyboard: false});
+        }
+      })
+    </script>
+  </body>
+</html>

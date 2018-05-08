@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台操作平台</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/houtai.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="container" class="clearfix">
+      <div class="black-sidebar">
+          <div class="black-logo">
+            <a class="demologo"><img src="img/houtaiicon_w.png"></a>
+          </div>
+          <ul class="nav">
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-knight"></i>
+                <span>广告管理</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a href="self-houtai-advert-admin.html">广告管理</a>
+                </li>
+                <li>
+                  <a>广告商管理</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-th"></i>
+                <span>CP管理</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a href="self-houtai-cp-manager.html" class="active">CP管理</a>
+                </li>
+                <li>
+                  <a href="self-houtai-cp-finance.html">财务信息</a>
+                </li>
+                <li>
+                  <a href="self-houtai-cp-member.html">团队成员信息</a>
+                </li>
+                <li>
+                  <a href="self-houtai-cp-app.html">应用审核</a>
+                </li>
+                <li>
+                  <a href="self-houtai-cp-drawing.html">提款信息</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-user"></i>
+                <span>平台PC管理</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>产品介绍</a>
+                </li>
+                <li>
+                  <a>新闻动态管理</a>
+                </li>
+                <li>
+                  <a>banner管理</a>
+                </li>
+                <li>
+                  <a>SDK管理</a>
+                </li>
+                <li>
+                  <a>用户管理</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      <div class="black-main">
+        <div class="black-main-header">
+          <ul class="clearfix">
+            <li><a><i class="glyphicon glyphicon-user"></i>wufeng030@qq.com</a></li>
+            <li><a><i class="glyphicon glyphicon-off"></i>退出</a></li>
+          </ul>
+        </div>
+        <div class="black-main-body">
+          <div id="houtai-myinfo">
+            <div class="info-shell">
+              <h3>新增/修改CP信息</h3>
+            </div>
+            <ul class="houtai-form">
+              <li>
+                <label>名称：</label>
+                <span><input type="text" class="form-control trim-input"></span>
+              </li>
+              <li>
+                <label>身份类型：</label>
+                <span>
+                  <select class="ad-chouse-select" name="">
+                          <option value="">请选择</option>
+                          <option value="1">个人/开发团队</option>
+                          <option value="2">企业</option>
+                    </select>
+                </span>
+              </li>
+              <li>
+                <label>手机号码：</label>
+                <span><input name="phonehm" type="text" class="form-control trim-input"></span>
+              </li>
+              <li>
+                <label>固定电话：</label>
+                <span><input type="text" class="form-control trim-input"></span>
+              </li>
+              <li>
+                <label>联系地址：</label>
+                <span><input type="text" class="form-control trim-input"></span>
+              </li>
+              <li>
+                <label>邮政编码：</label>
+                <span><input type="text" class="form-control trim-input"></span>
+              </li>
+              <li>
+                <label>联系地址：</label>
+                <span><input type="text" class="form-control trim-input"></span>
+              </li>
+              <li>
+                <label>QQ号码：</label>
+                <span><input type="text" class="form-control trim-input"></span>
+              </li>
+            </ul>
+            <div class="tj-button">
+              <button type="submit" class="btn btn-default btn-lg a-custom-btn">确认保存</button>
+            </div>
+          </div>
+        </div>
+        <div class="black-main-footer">
+          <div>
+            <div class="footer-nav">
+              <a target="_blank">关于我们</a>
+              <a target="_blank">合作伙伴</a>
+              <a target="_blank">下载中心</a>
+              <a target="_blank">加入我们</a>
+              <a target="_blank">联系我们</a>
+              <a target="_blank">条款规定</a>
+              <a target="_blank">网站地图</a>
+            </div>
+            <div id="copyright">
+              <span>Copyright © 2015 All Rights Reserved. 版权所有  粤ICP备0000000000号</span>
+              <a href="" target="_blank" style="margin-left:10px;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flag.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script>
+     window.onload = function (){
+        checkHeight();
+      }
+    </script>
+  </body>
+</html>

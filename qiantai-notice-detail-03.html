@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>葵果前台门户首页</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/qiantai.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="container" class="white-shild clearfix">
+      <div id="white-header">
+        <div>
+          <a id="white-logo" class="clearfix" href=""><img src="img/houtaiicon_b.png"></a>
+          <span class="loginplug"><a href="qiantai-login.html">登录</a><i>/</i><a href="qiantai-register.html">注册</a></span>
+          <ul id="header_nav">
+            <li><a href="qiantai-index.html">首页</a></li>
+            <li><a href="qiantai-product.html">产品介绍</a></li>
+            <li><a href="qiantai-sdk.html">SDK下载</a></li>
+            <li class="current"><a href="qiantai-notice.html">葵果动态</a></li>
+            <li><a href="qiantai-faq.html">帮助中心</a></li>
+            <li class="scrollObj"></li>
+          </ul>
+        </div>
+      </div>
+        <div class="notice_detail clearfix">
+          <div class="newsdiv clearfix">
+            <div class="news_left" style="position:relative;">
+                <h3>eMarketer报告显示：移动推广收入明年初或超桌面推广</h3>
+                <p> 发布时间：<a>2015-6-8</a></p>
+                <article>从用户规模、行为和用量来看，移动时代已经到来，但推广收入桌面推广一直占绝对优势。不过，根据若干报告的预测，这种情况可能最早明年就会改变。</article>
+       <article>eMarketer有关美国数字推广收入的最新报告是2016年这种情况会发生逆转。根据其预测，2015年桌面推广与移动推广收入分别是298.9亿美元（51%）和287.2亿美元（49%），差距已经很小。到了2016年，桌面推广收入将进一步萎缩到265.9亿美元，而移动推广则猛增到405亿美元，一下子增加了40%多，其占比也提高到了60%。而网络推广公司Marin Software的预测甚至更为乐观，该公司认为到2015年底移动推广收入就将超越桌面。该公司观察到2014年移动付费搜索的份额从32%提高到了44%，按此速度发展，2015年移动搜索就可以超越桌面。</article>
+       <article>移动推广压倒桌面的原因除了移动设备的大规模采用以外，还包括移动推广点击和转化率的提升。其中对移动推广收入贡献最大的是app，占到了移动收入的75%，这也许主要得益于与内容比较无缝结合的原生推广的兴起。而Google、Facebook等公司在策略上也在主动推动这一趋势得到发展，有些公司还会强迫客户在购买桌面推广的同时搭配购买移动推广。Google上个月更对政策作出调整，指出移动就绪的公司在搜索时会获得更好的待遇。</article><br><br>
+       <a style="position:absolute;left:0;botttom:0;" href="javascript:window.history.go(-1);"><<上一篇</a><a style="position:absolute;right:0;botttom:0;" href="qiantai-notice-detail-04.html">下一篇>></a>
+            </div>
+            <div class="news_right">
+              <div class="n_help_center clearfix">
+                <div><img src="img/n_hc.png"></div>
+                <div><p>帮助中心</p><p>help&nbsp;center</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="white-main-footer">
+      <div>
+        <div>
+          <ul>
+            <li><a>下载中心</a></li>
+            <li><a>隐私政策</a></li>
+            <li><a>服务条款</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><a>加入我们</a></li>
+            <li><a>联系我们</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Copyright©</li>
+            <li>联系地址：上海市闵行区秀文路868号西子国际中心</li>
+          </ul>
+        </div>
+        <img src="img/houtaiicon_w.png">
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flag.js"></script>
+    <script>
+      window.onload = function (){
+        var a = $(window).height() -70;
+        $(".white-shild").css("min-height",a);
+      }
+     $("#header_nav > li").ScrollNav({
+        scrollObj:"#header_nav > .scrollObj", //滑动的对象
+        speed:"fast" //速度
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台操作平台</title>
+
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/houtai.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="container" class="clearfix">
+      <div class="black-sidebar">
+          <div class="black-logo">
+            <a class="demologo"><img src="img/houtaiicon_w.png"></a>
+          </div>
+          <ul class="nav">
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-knight"></i>
+                <span>广告管理</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a href="self-houtai-advert-admin.html">广告管理</a>
+                </li>
+                <li>
+                  <a href="self-houtai-add_ac1.html">创建广告</a>
+                </li>
+              </ul>
+            </li>
+            <!-- <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-cog"></i>
+                <span>开发者管理</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a href="self-houtai-cp-manager.html">CP管理</a>
+                </li>
+                <li>
+                  <a href="self-houtai-cp-finance.html">财务信息</a>
+                </li>
+                <li>
+                  <a href="self-houtai-cp-member.html">团队成员信息</a>
+                </li>
+                <li>
+                  <a href="self-houtai-cp-app.html">应用审核</a>
+                </li>
+                <li>
+                  <a href="self-houtai-cp-drawing.html">提款信息</a>
+                </li>
+              </ul>
+            </li> -->
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-retweet"></i>
+                <span>数据中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>用户数据</a>
+                </li>
+                <li>
+                  <a>应用收益</a>
+                </li>
+                <li>
+                  <a>广告主数据监控</a>
+                </li>
+                <li>
+                  <a>开发者数据监控</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-usd"></i>
+                <span>财务中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>财务信息</a>
+                </li>
+                <li>
+                  <a>财务日志</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-user"></i>
+                <span>平台PC管理</span>
+              </a>
+              <ul class="nav">
+                <!-- <li>
+                  <a>产品介绍</a>
+                </li>
+                <li>
+                  <a>新闻动态管理</a>
+                </li>
+                <li>
+                  <a>banner管理</a>
+                </li>
+                <li>
+                  <a>SDK管理</a>
+                </li> -->
+                <li>
+                  <a href="self-houtai-ctl-alluser.html" class="active">用户管理</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      <div class="black-main">
+        <div class="black-main-header">
+          <ul class="clearfix">
+            <li><a><i class="glyphicon glyphicon-user"></i>wufeng030@qq.com</a></li>
+            <li><a><i class="glyphicon glyphicon-off"></i>退出</a></li>
+          </ul>
+        </div>
+        <div class="black-main-body">
+          <div id="houtai-finance-drawcash">
+            <div class="info-shell">
+              <h3>用户资料</h3>
+            </div>
+            <!--<div class="big_tips_shild">
+               <div>
+                <h5>打款周期说明：</h5>
+                <p>
+                  <strong>
+                  Android媒介周结，iOS媒介月结。<br>
+                  葵果每周审核上周一至上周日的Android提款申请，款项于周三汇出；<br>
+                  每月最后一个星期三处理上周及之前的iOS媒介提款请求并打款。
+                  </strong>
+                </p>
+                <h5>可提款余额说明</h5>
+                <p>提款只能提取<strong>“可提款余额”</strong>所示的金额。</p>
+                <p>由于葵果提款只能提取正整数金额，所以周结后的“可提款余额”是“账户余额”的<strong>正整数</strong>。</p>
+                <h5>发票事项：</h5>
+                <p>开发者在平台提款，需要依法提供等同金额的信息服务费或广告费发票，如无法提供发票的，我司将在当地税务局为开发者开具等额的劳务费发票。</p>
+                <h5>（个人或团队开发者）不提供发票：</h5>
+                <p>葵果将按国家规定代扣代缴劳务需征的税费。<a>扣税详情请见此公告</a></p>
+                <p>团队人数<strong>仅包含</strong>已通过审核的团队成员数。</p>
+                <h5>（个人、团队或公司开发者）提供发票：</h5>
+                <dl>
+                  <dt>发票金额：</dt>
+                  <dd>必须与提款金额一致。</dd>
+                  <dt>发票类型：</dt>
+                  <dd>目前我们只收抬头为<strong>“踏娱网络科技有限公司”</strong>的信息服务费、广告费发票。所提供发票必须真实有效且时间为三个月内<a>（开发者发票要求说明）</a>。<i></i></dd>
+                  <dt>发票样本：</dt>
+                  <dd><a>点击查看增值税专用发票样本</a>（需在正确位置盖上发票专用章）<i></i></dd>
+                  <dt>邮寄说明：</dt>
+                  <dd>请保持发票界面简洁，可附上纸条注明账号和提款申请号（不要在任何地方涂画）</dd>
+                  <dt>寄送时间：</dt>
+                  <dd>发票需要在提款申请被处理前寄到</dd>
+                  <dt>寄送方式：</dt>
+                  <dd>为发票的安全性及打款的及时性，建议顺丰邮寄到总公司（邮费自理）</dd>
+                  <dt>地址：</dt>
+                  <dd>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</dd>
+                  <dt>邮编：</dt>
+                  <dd>1111111</dd>
+                                      <dt>收件人：</dt>
+                  <dd><strong>X小姐</strong></dd>
+                  <dt>联系电话：</dt>
+                  <dd><strong>18888888888</strong></dd>
+                  <dt>特别注意：</dt>
+                  <dd>
+                    如遇以下情况提款申请将延期打款：
+                    <ul>
+                        <li>发票出现错误（会通知开发者说明情况并回寄）</li>
+                        <li>在葵果提款申请处理日期间，发票没有寄到</li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+            </div>-->
+            <form action="" style="width:60%;" class="reviewed_s_page">
+              <ul class="houtai-form">
+                <li>
+                  <label>用户名/邮箱：</label>
+                  <span>wufeng030@qq.com</span>
+                </li>
+                <li>
+                  <label>审核状态：</label>
+                  <span class="label label-success">通过</span>
+                  <span class="label label-warning">审核中</span>
+                  <span class="label label-danger">已拒绝</span>
+                </li>
+                <li>
+                  <label>用户身份：</label>
+                  <span>开发者</span>
+                </li>
+                <li>
+                  <label>公司名称：</label>
+                  <span><input type="text" class="form-control trim-input" value="上海踏娱网络科技有限公司"></span>
+                </li>
+                <li>
+                  <label>联系人姓名：</label>
+                  <span><input type="text" class="form-control trim-input" value="吴枫"></span>
+                </li>
+                <li>
+                  <label>行业：</label>
+                  <span>
+                    <select class="wufeng">
+                      <option>游戏类</option>
+                      <option value="cpa">应用类</option>
+                      <option>网络服务</option>
+                      <option>旅游服务</option>
+                      <option>生活服务</option>
+                      <option>金融服务</option>
+                      <option>医疗卫生</option>
+                      <option>教育培训</option>
+                      <option>法律服务</option>
+                      <option>房地产业</option>
+                      <option>汽车产业</option>
+                      <option>电子家电</option>
+                      <option>服装服饰</option>
+                      <option>其他</option>
+                    </select>
+                  </span>
+                </li>
+                <li class="wfff" style="display:none;">
+                  <label>联系方式：</label>
+                  <span><input type="text" class="form-control trim-input" value="18717884032"></span>
+                </li>
+                <li>
+                  <label>联系地址：</label>
+                  <span><input type="text" class="form-control trim-input" value="上海市闵行区莲花南路"></span>
+                </li>
+                <li>
+                  <label style="width:120px;">营业执照：</label>
+                  <span class="lic3zoom"><img src="img/yyzz.jpg" title="点击可放大"></span>
+                </li>
+                <li>
+                  <label style="width:120px;">组织机构代码证：</label>
+                  <span class="lic3zoom"><img src="img/zzjgdmz.jpg" title="点击可放大"></span>
+                </li>
+                <li>
+                  <label style="width:120px;">税务登记证：</label>
+                  <span class="lic3zoom"><img src="img/swdj.jpg" title="点击可放大"></span>
+                </li>
+                <li>
+                  <label>修改密码：</label>
+                  <span><input type="text" class="form-control trim-input" value=""></span>
+                </li>
+                <li class="clearfix">
+                  <h4 class="user-typetitle">账户资料</h4>
+                  <label>余额：</label>
+                  <span class="count-balance">
+                    <span class="lis_rechage">2354</span>元
+                    <div>
+                      <a class="btn btn-success thisrecharge">充值</a>
+                      <div class="thisshowrecharge">
+                        <input type="text" class="form-control trim-input onlynum" style="width:100px !important;">
+                          &nbsp;<p class="btn btn-success">确认充值</p>
+                      </div>
+                    </div>
+                  </span>
+                </li>
+                <li>
+                  <label>银行卡信息：</label>
+                  <span>
+                    <select>
+                      <option>中国工商银行</option>
+                      <option>中国建设银行</option>
+                      <option>中国交通银行</option>
+                      <option>中国招商银行</option>
+                      <option>中国农业银行</option>
+                      <option>中国银行</option>
+                      <option>其他</option>
+                    </select>
+                    <input type="text" class="form-control trim-input onlynum" value="">
+                  </span>
+                </li>
+              </ul>
+              <h4 class="review_ctl">审核状态：<button type="button" class="btn btn-success">通过</button><button type="button" class="btn btn-danger review_refuse">拒绝</button></h4>
+              <div class="review_ctl">
+                <textarea cols="60" rows="5"></textarea>
+                <button class="btn btn-primary" style="position:relative;top:-13px;">确定</button>
+              </div>
+              <a style="display:inline-block;margin:10px 20px;" href="javascript:history.back(-1);">&gt;&gt;返回用户列表页</a>
+            </form>
+          </div>
+        </div>
+        <div class="black-main-footer">
+          <div>
+            <div class="footer-nav">
+              <a target="_blank">关于我们</a>
+              <a target="_blank">合作伙伴</a>
+              <a target="_blank">下载中心</a>
+              <a target="_blank">加入我们</a>
+              <a target="_blank">联系我们</a>
+              <a target="_blank">条款规定</a>
+              <a target="_blank">网站地图</a>
+            </div>
+            <div id="copyright">
+              <span>Copyright © 2015 All Rights Reserved. 版权所有  粤ICP备0000000000号</span>
+              <a href="" target="_blank" style="margin-left:10px;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="userlist_mod" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <img src="">
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flag.js"></script>
+    <script>
+     window.onload = function (){
+        checkHeight();
+        /*------------演示代码可删除------------*/
+        if(getUrlParam('usertype') == 1){
+          $(".user-typetitle").text("广告主用户");
+        }else if(getUrlParam('usertype') == 2){
+          $(".user-typetitle").text("开发者用户");
+        }else if(getUrlParam('usertype') == 3){
+          $(".user-typetitle").text("管理员");
+        }
+       /*------------演示代码可删除------------*/
+       $(".review_refuse").click(function(){
+          $("div.review_ctl").show();
+        })
+      }
+      $(".lic3zoom img").click(function(){         //图片放大
+          var athis = $(this).attr("src");
+          $(".modal-content img").attr("src",athis);
+          $('#userlist_mod').modal('show');
+      })
+
+      $(".thisrecharge").click(function(){
+        $(this).hide();
+        $(".thisshowrecharge").show();
+      })
+      $(".thisshowrecharge p").click(function(){
+       if($('.thisshowrecharge input').val() == ""){
+        alert("不能为空值")
+       }else{
+        $(".lis_rechage").html(parseInt($('.thisshowrecharge input').val()) + parseInt($('.lis_rechage').html()));
+       }
+       $(".thisshowrecharge").hide();
+       $(".thisrecharge").show();
+      })
+
+    </script>
+  </body>
+</html>

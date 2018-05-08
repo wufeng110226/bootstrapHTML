@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台操作平台</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/houtai.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="container" class="clearfix">
+      <div class="black-sidebar">
+          <div class="black-logo">
+            <a class="demologo"><img src="img/houtaiicon_w.png"></a>
+          </div>
+          <ul class="nav">
+            <li>
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-home"></i>
+                <span>后台首页</span>
+              </a>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-th"></i>
+                <span>应用中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>应用列表</a>
+                </li>
+                <li>
+                  <a>详细信息</a>
+                </li>
+                <li>
+                  <a class="active">广告设置</a>
+                </li>
+                <li>
+                  <a>添加应用</a>
+                </li>
+                <li>
+                  <a>SDK下载</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-signal"></i>
+                <span>数据中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>收入报表</a>
+                </li>
+                <li>
+                  <a>应用报表</a>
+                </li>
+                <li>
+                  <a>用户报表</a>
+                </li>
+                <li>
+                  <a>统计</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-yen"></i>
+                <span>财务中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>财务记录</a>
+                </li>
+                <li>
+                  <a>通知设置</a>
+                </li>
+                <li>
+                  <a>申请提款</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-user"></i>
+                <span>个人中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>基本信息</a>
+                </li>
+                <li>
+                  <a>财务信息设置</a>
+                </li>
+                <li>
+                  <a>修改密码</a>
+                </li>
+                <li>
+                  <a>我的消息</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      <div class="black-main">
+        <div class="black-main-header">
+          <ul class="clearfix">
+            <li><a><i class="glyphicon glyphicon-user"></i>wufeng030@qq.com</a></li>
+            <li><a><i class="glyphicon glyphicon-off"></i>退出</a></li>
+          </ul>
+        </div>
+        <div class="black-main-body">
+          <div id="houtai-appdetail">
+            <div class="appdetail-shell">
+              <div class="btn-group choose-app">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default1<span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">adasdasdasdasd</a></li>
+                  <li><a href="#">12123</a></li>
+                  <li><a href="#">我勒个去我勒个去我勒个去</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-default btn-lg a-custom-btn"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加应用</button>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-striped table-bordered table-hover applist-table">
+                <caption class="clearfix">
+                    <h2 class="list-head"><i class="glyphicon glyphicon-list"></i><span>应用列表</span></h2>
+                </caption>
+                <thead>
+                  <tr>
+                    <th>过滤项</th>
+                    <th>图标</th>
+                    <th>广告名称</th>
+                    <th>广告标签</th>
+                    <th>广告语</th>
+                    <th>结算方式</th>
+                    <th>激活单价</th>
+                    <th>追加任务单价</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img style="width:48px;" src="http://ad.img.static.youmi.net/app/26500/icon.png"></td>
+                    <td>去哪儿旅行</td>
+                    <td>旅游</td>
+                    <td>在这里，总有你要的低价！</td>
+                    <td>CPA</td>
+                    <td>￥1.190</td>
+                    <td>￥0.630</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img style="width:48px;" src="http://ad.img.static.youmi.net/app/26500/icon.png"></td>
+                    <td>去哪儿旅行</td>
+                    <td>旅游</td>
+                    <td>在这里，总有你要的低价！</td>
+                    <td>CPA</td>
+                    <td>￥1.190</td>
+                    <td>￥0.630</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img style="width:48px;" src="http://ad.img.static.youmi.net/app/26500/icon.png"></td>
+                    <td>去哪儿旅行</td>
+                    <td>旅游</td>
+                    <td>在这里，总有你要的低价！</td>
+                    <td>CPA</td>
+                    <td>￥1.190</td>
+                    <td>￥0.630</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img style="width:48px;" src="http://ad.img.static.youmi.net/app/26500/icon.png"></td>
+                    <td>去哪儿旅行</td>
+                    <td>旅游</td>
+                    <td>在这里，总有你要的低价！</td>
+                    <td>CPA</td>
+                    <td>￥1.190</td>
+                    <td>￥0.630</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox"></td>
+                    <td><img style="width:48px;" src="http://ad.img.static.youmi.net/app/26500/icon.png"></td>
+                    <td>去哪儿旅行</td>
+                    <td>旅游</td>
+                    <td>在这里，总有你要的低价！</td>
+                    <td>CPA</td>
+                    <td>￥1.190</td>
+                    <td>￥0.630</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="right-nav">
+              <nav>
+                <ul class="pagination">
+                  <li><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+                </ul>
+              </nav>
+            </div>
+
+          </div>
+        </div>
+        <div class="black-main-footer">
+          <div>
+            <div class="footer-nav">
+              <a target="_blank">关于我们</a>
+              <a target="_blank">合作伙伴</a>
+              <a target="_blank">下载中心</a>
+              <a target="_blank">加入我们</a>
+              <a target="_blank">联系我们</a>
+              <a target="_blank">条款规定</a>
+              <a target="_blank">网站地图</a>
+            </div>
+            <div id="copyright">
+              <span>Copyright © 2015 All Rights Reserved. 版权所有  粤ICP备0000000000号</span>
+              <a href="" target="_blank" style="margin-left:10px;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flag.js"></script>
+    <script>
+     window.onload = function (){
+        checkHeight();
+        chouse_app();
+      }
+    </script>
+  </body>
+</html>

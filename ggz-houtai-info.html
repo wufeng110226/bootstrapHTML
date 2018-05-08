@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台操作平台</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/houtai.css" rel="stylesheet">
+    <link href="css/fileinput.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="container" class="clearfix">
+      <div class="black-sidebar">
+          <div class="black-logo">
+            <a class="demologo"><img src="img/houtaiicon_w.png"></a>
+          </div>
+          <ul class="nav">
+            <li>
+              <a href="ggz-houtai-info.html?backid=1&&wofeng=309" class="nav-header" backid="1">
+                <i class="icon-home glyphicon glyphicon-home"></i>
+                <span>后台首页</span>
+              </a>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-th"></i>
+                <span>广告中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a href="ggz-houtai-info.html?backid=21&&wofeng=309" backid="21">产品列表</a>
+                </li>
+                <li>
+                  <a href="ggz-houtai-info.html?backid=22&&wofeng=309" backid="22">广告列表</a>
+                </li>
+                <li>
+                  <a href="ggz-houtai-info.html?backid=23&&wofeng=309" backid="23">广告投放</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-yen"></i>
+                <span>财务中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>财务信息</a>
+                </li>
+                <li>
+                  <a>快速充值</a>
+                </li>
+                <li>
+                  <a>申请发票</a>
+                </li>
+
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-user"></i>
+                <span>个人中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a class="active">基本信息</a>
+                </li>
+                <li>
+                  <a>修改密码</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      <div class="black-main">
+        <div class="black-main-header">
+          <ul class="clearfix">
+            <li><a><i class="glyphicon glyphicon-user"></i>wufeng030@qq.com</a></li>
+            <li><a><i class="glyphicon glyphicon-off"></i>退出</a></li>
+          </ul>
+        </div>
+        <div class="black-main-body">
+          <div id="houtai-myinfo">
+            <div class="info-shell">
+              <h3>基本信息设置</h3>
+            </div>
+              <ul class="houtai-form">
+                <li>
+                  <p style="font-size:12px;color:#993300;"><span class="glyphicon glyphicon-exclamation-sign" style="color:#cc0000;"></span>&nbsp;为了给您提供更好的服务，请填写真实资料,我们会保护用户隐私资料，绝不会向第三方透露用户的个人资料。</p>
+                </li>
+                <li>
+                  <label>用户名/邮箱：</label>
+                  <span>wufeng030@qq.com</span>
+                </li>
+                <li>
+                  <label>公司名称：</label>
+                  <span><input type="text" class="form-control trim-input" value="上海踏娱网络科技有限公司"></span>
+                </li>
+                <li>
+                  <label>联系人姓名：</label>
+                  <span><input type="text" class="form-control trim-input" value="吴枫"></span>
+                </li>
+                <li>
+                  <label>行业：</label>
+                  <span>
+                    <select>
+                      <option>游戏类</option>
+                      <option>应用类</option>
+                      <option>网络服务</option>
+                      <option>旅游服务</option>
+                      <option>生活服务</option>
+                      <option>金融服务</option>
+                      <option>医疗卫生</option>
+                      <option>教育培训</option>
+                      <option>法律服务</option>
+                      <option>房地产业</option>
+                      <option>汽车产业</option>
+                      <option>电子家电</option>
+                      <option>服装服饰</option>
+                      <option>其他</option>
+                    </select>
+                  </span>
+                </li>
+                <li>
+                  <label>联系方式：</label>
+                  <span><input type="text" class="form-control trim-input" value="18717884032"></span>
+                </li>
+                <li>
+                  <label>联系地址：</label>
+                  <span><input type="text" class="form-control trim-input" value="上海市闵行区莲花南路"></span>
+                </li>
+                <li class="">
+                  <label style="float:left;width:120px;">营业执照：</label>
+                  <span class="d-apptype">
+                    <div class="form-group">
+                        <input class="uploadAndroidicon" type="file" multiple=true>
+                    </div>
+                    <p class="appdetail-hint appdetail-uploadhint">
+                      请上传尺寸不小于 72x72 , 宽高相等，大小不超过1M, 格式为 png, jpg, jpeg 的图标
+                    </p>
+                  </span>
+                </li>
+                <li class="">
+                  <label style="float:left;width:120px;">组织机构代码证：</label>
+                  <span class="d-apptype">
+                    <div class="form-group">
+                        <input class="uploadAndroidicon" type="file" multiple=true>
+                    </div>
+                    <p class="appdetail-hint appdetail-uploadhint">
+                      请上传尺寸不小于 72x72 , 宽高相等，大小不超过1M, 格式为 png, jpg, jpeg 的图标
+                    </p>
+                  </span>
+                </li>
+                <li class="">
+                  <label style="float:left;width:120px;">税务登记证：</label>
+                  <span class="d-apptype">
+                    <div class="form-group">
+                        <input class="uploadAndroidicon" type="file" multiple=true>
+                    </div>
+                    <p class="appdetail-hint appdetail-uploadhint">
+                      请上传尺寸不小于 72x72 , 宽高相等，大小不超过1M, 格式为 png, jpg, jpeg 的图标
+                    </p>
+                  </span>
+                </li>
+                <!-- <li>
+                  <label style="width:120px;">营业执照：</label>
+                  <span class="lic3zoom"><img src="img/yyzz.jpg" title="点击可放大"></span>
+                </li>
+                <li>
+                  <label style="width:120px;">组织机构代码证：</label>
+                  <span class="lic3zoom"><img src="img/zzjgdmz.jpg" title="点击可放大"></span>
+                </li>
+                <li>
+                  <label style="width:120px;">税务登记证：</label>
+                  <span class="lic3zoom"><img src="img/swdj.jpg" title="点击可放大"></span>
+                </li> -->
+              </ul>
+              <div class="tj-button">
+                <button type="submit" class="btn btn-default btn-lg a-custom-btn">确认保存</button>
+              </div>
+          </div>
+        </div>
+        <div class="black-main-footer">
+          <div>
+            <div class="footer-nav">
+              <a target="_blank">关于我们</a>
+              <a target="_blank">合作伙伴</a>
+              <a target="_blank">下载中心</a>
+              <a target="_blank">加入我们</a>
+              <a target="_blank">联系我们</a>
+              <a target="_blank">条款规定</a>
+              <a target="_blank">网站地图</a>
+            </div>
+            <div id="copyright">
+              <span>Copyright © 2015 All Rights Reserved. 版权所有  粤ICP备0000000000号</span>
+              <a href="" target="_blank" style="margin-left:10px;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="userlist_mod" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <img src="">
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fileinput.js" type="text/javascript"></script>
+    <script src="js/flag.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script>
+     window.onload = function (){
+        checkHeight();
+
+
+        var tacitve = getUrlParam('backid');
+        if(getUrlParam('backid') == tacitve){
+
+          $(".nav li a").removeClass("active");
+          //var uidget = getUrlParam('backid');
+          //console.log(uidget);
+          $("[backid="+tacitve+"]").addClass("active");
+
+        }
+
+      }
+
+      var s = ['23,446.00','26,486.00','32,376.00','35,378.00','37,430.00','43,396.00','32,984.00']
+      ss = $.map(s, function(arr){
+          return (arr.replace(/,/g,''));
+      })
+      console.log(ss);
+
+      /*$(".lic3zoom img").click(function(){         //图片放大
+          var athis = $(this).attr("src");
+          $(".modal-content img").attr("src",athis);
+          $('#userlist_mod').modal('show');
+      })*/
+
+      $(".uploadAndroidicon").fileinput({                   //安卓上传图标
+        //maxImageWidth: 72,                                    //最大宽度
+        //maxImageHeight: 72,                                   //最大高度
+        showUpload: true,                                     //显示上传按钮-显示
+        showCaption: false,                                   //显示标题-不显示
+        allowedPreviewTypes:['image'],                        //设置只有img可以预览
+        showRemove: false,                                    //显示移除按钮-不显示
+        allowedFileExtensions : ['jpg','png'],                //允许上传的文件格式
+        dropZoneEnabled: false,                               //取消拖拽上传区域
+        maxFileCount: 1,                                      //上传最大数量
+        uploadAsync: false,                                   //异步上传-false:否，true:是
+        uploadUrl: "server/upload.txt"                       //上传地址
+      });
+    </script>
+  </body>
+</html>

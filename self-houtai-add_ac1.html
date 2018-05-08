@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台操作平台</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/houtai.css" rel="stylesheet">
+    <link href="css/fileinput.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="container" class="clearfix">
+      <div class="black-sidebar">
+          <div class="black-logo">
+            <a class="demologo"><img src="img/houtaiicon_w.png"></a>
+          </div>
+          <ul class="nav">
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-knight"></i>
+                <span>广告管理</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a href="self-houtai-advert-admin.html">广告管理</a>
+                </li>
+                <li>
+                  <a href="self-houtai-add_ac1.html" class="active">创建广告</a>
+                </li>
+              </ul>
+            </li>
+            <<!-- li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-cog"></i>
+                <span>开发者管理</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a href="self-houtai-cp-manager.html">CP管理</a>
+                </li>
+                <li>
+                  <a href="self-houtai-cp-finance.html">财务信息</a>
+                </li>
+                <li>
+                  <a href="self-houtai-cp-member.html">团队成员信息</a>
+                </li>
+                <li>
+                  <a href="self-houtai-cp-app.html">应用审核</a>
+                </li>
+                <li>
+                  <a href="self-houtai-cp-drawing.html">提款信息</a>
+                </li>
+              </ul>
+            </li> -->
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-retweet"></i>
+                <span>数据中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>用户数据</a>
+                </li>
+                <li>
+                  <a>应用收益</a>
+                </li>
+                <li>
+                  <a>广告主数据监控</a>
+                </li>
+                <li>
+                  <a>开发者数据监控</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-usd"></i>
+                <span>财务中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>财务信息</a>
+                </li>
+                <li>
+                  <a>财务日志</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-user"></i>
+                <span>平台PC管理</span>
+              </a>
+              <ul class="nav">
+                <!-- <li>
+                  <a>产品介绍</a>
+                </li>
+                <li>
+                  <a>新闻动态管理</a>
+                </li>
+                <li>
+                  <a>banner管理</a>
+                </li>
+                <li>
+                  <a>SDK管理</a>
+                </li> -->
+                <li>
+                  <a href="self-houtai-ctl-alluser.html">用户管理</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      <div class="black-main">
+        <div class="black-main-header">
+          <ul class="clearfix">
+            <li><a><i class="glyphicon glyphicon-user"></i>wufeng030@qq.com</a></li>
+            <li><a><i class="glyphicon glyphicon-off"></i>退出</a></li>
+          </ul>
+        </div>
+        <div class="black-main-body">
+          <div id="houtai-add">
+            <div class="info-shell">
+              <h3>广告投放-添加/修改产品</h3>
+            </div>
+            <form action="" class="jsForm">
+              <ul class="houtai-form">
+                <li>
+                  <p class="add_app_steps">
+                    <span class="steps_active">创建产品</span>
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="color:#5cb85c;"></span>
+                    <span class="">广告定向设置</span>
+                  </p>
+                  <div class="progress" style="width:360px;height:8px;">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 50%">
+                      <span class="sr-only"></span>
+                    </div>
+                    <!-- <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 38%">
+                      <span class="sr-only">20% Complete (warning)</span>
+                    </div>
+                    <div class="progress-bar progress-bar-success progress-bar-striped" style="width: 34%">
+                      <span class="sr-only">10% Complete (danger)</span>
+                    </div> -->
+                  </div>
+                </li>
+                <li>
+                  <h4>创建产品单</h4>
+                  <label>产品名称：</label>
+                  <span><input name="add-plan-name" class="form-control trim-input" type="text" required data-msg-required="请填写产品名称"/></span>
+                  <span class="appdetail-hint">填写产品名称时，请包含您的产品名称，有助于提升审核效率。</span>
+                  <span for="add-plan-name" class="error"></span>
+                </li>
+                <li>
+                  <label>推广类型：</label>
+                  <span class="d-apptype">
+                    <label><input id="" name="ad-spread-type" type="radio" value="1" required data-msg-required="请选择类型">品牌推广</label>
+                    <label><input id="" name="ad-spread-type" type="radio" value="2">应用推广</label>
+                  </span>
+                  <span for="ad-spread-type" class="error"></span>
+                </li>
+                <li class="fit_platform">
+                  <label>适合平台：</label>
+                  <span class="d-apptype">
+                    <label><input id="" name="ad-platform-type" type="radio" value="1" required data-msg-required="请选择平台">Android</label>
+                    <label><input id="" name="ad-platform-type" type="radio" value="2">ios</label>
+                  </span>
+                  <span for="ad-platform-type" class="error"></span>
+                </li>
+                <li class="spread_display">
+                  <label>推广链接：</label>
+                  <span><input name="add-spread-link" class="form-control trim-input" type="text" required data-msg-required="推广链接不能为空"/></span>
+                  <span for="add-spread-link" class="error"></span>
+                </li>
+                <li class="android_display">
+                  <label style="float:left;">上传安装包：</label>
+                  <span class="d-apptype">
+                    <div class="form-group">
+                        <input class="uploadAndroid" type="file" multiple=true>
+                    </div>
+                    <p class="appdetail-hint appdetail-uploadhint">
+                      请将成功嵌入广告的安装包进行上传（安装包建议全英命名)，文件大小超过<strong style="color:#c73e17;">50M</strong>,请发送邮件并附上应用名、包名以及3-5张应用截图到<a href="wufeng030@qq.com"><strong style="color:#c73e17;">wufeng030@qq.com</strong></a>。<br>上传成功后，我们将在每个<strong style="color: #c73e17;">工作日的9:00-11:00</strong>进行审核;审核通过即为“运行”状态，可获得正式广告
+                    </p>
+                  </span>
+                </li>
+                <li class="ios_display">
+                  <label>应用地址：</label>
+                  <span><input class="form-control trim-input" type="text"/></span>
+                </li>
+                <li class="deep_display">
+                  <label>应用名称：</label>
+                  <span><input name="android-app-name" class="form-control trim-input" type="text" required data-msg-required="应用名称不能为空"/></span>
+                  <span for="android-app-name" class="error"></span>
+                </li>
+                <li class="android_display">
+                  <label style="float:left;">应用图标：</label>
+                  <span class="d-apptype">
+                    <div class="form-group">
+                        <input class="uploadAndroidicon" type="file" multiple=true>
+                    </div>
+                    <p class="appdetail-hint appdetail-uploadhint">
+                      请上传尺寸不小于 72x72 , 宽高相等，大小不超过1M, 格式为 png, jpg, jpeg 的图标
+                    </p>
+                  </span>
+                </li>
+                <li class="android_display">
+                  <label style="float:left;">应用截图：</label>
+                  <span class="d-apptype">
+                    <div class="form-group">
+                        <input class="uploadAndroidcutimg" type="file" multiple=true>
+                    </div>
+                    <p class="appdetail-hint appdetail-uploadhint">
+                     请上传<strong style="color:#c73e17;">3-5张</strong>应用截图，其中至少1张为<strong style="color: #c73e17;">应用内展示葵果广告的截图</strong>，否则无法通过审核。<br><strong style="color:#c73e17;">截图要求：</strong>宽度不小于320，高度不小于480高度大于宽度，格式为PNG，JPG，JPEG的截图，大小不超过1M。
+                    </p>
+                  </span>
+                </li>
+                <li class="deep_display">
+                  <label>应用类型：</label>
+                  <span>
+                    <select class="ad-chouse-select" name="select1" required data-msg-required="请选择类型">
+                          <option value="">请选择</option>
+                          <option value="1">[软件]多媒体软件</option>
+                          <option value="2">[软件]系统软件</option>
+                          <option value="3">[软件]实用软件</option>
+                          <option value="4">[软件]通讯辅助</option>
+                          <option value="5">[软件]网络应用</option>
+                          <option value="6">[软件]安全软件</option>
+                          <option value="7">[软件]其他</option>
+                          <option value="8">[游戏]角色扮演</option>
+                          <option value="9">[游戏]动作格斗</option>
+                          <option value="10">[游戏]体育竞技</option>
+                          <option value="11">[游戏]射击飞行</option>
+                          <option value="12">[游戏]策略回合</option>
+                          <option value="13">[游戏]冒险模拟</option>
+                          <option value="14">[游戏]休闲趣味</option>
+                          <option value="15">[游戏]棋牌益智</option>
+                    </select>
+                  </span>
+                </li>
+                <li class="deep_display">
+                  <label>应用作者：</label>
+                  <span><input class="form-control trim-input" type="text"/></span>
+                </li>
+                <li class="deep_display">
+                  <label style="float:left;">应用介绍：</label>
+                  <span>
+                    <textarea name="add_textarea" class="" cols="120" rows="5" required data-msg-required="不能为空"></textarea>
+                  </span>
+                  <span for="add_textarea" class="error"></span>
+                </li>
+                <li class="ios_display">
+                  <label style="float:left;">接口地址：</label>
+                  <span>
+                    <textarea name="interface-address" class="" cols="120" rows="5" required data-msg-required="接口地址不能为空，请联系客服"></textarea>
+                  </span>
+                  <span for="interface-address" class="error"></span>
+                  <p class="appdetail-hint appdetail-uploadhint" style="color:#D80000;">
+                      <span style="margin-right:5px;position:relative;top:2px;" class="glyphicon glyphicon-volume-up"></span>接口请参考：<a>葵果ios广告数据接口对接教程.pdf</a>
+                  </p>
+                </li>
+              </ul>
+              <div class="tj-button">
+                <button type="submit" class="btn btn-default btn-lg a-custom-btn">下一步</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="black-main-footer">
+          <div>
+            <div class="footer-nav">
+              <a target="_blank">关于我们</a>
+              <a target="_blank">合作伙伴</a>
+              <a target="_blank">下载中心</a>
+              <a target="_blank">加入我们</a>
+              <a target="_blank">联系我们</a>
+              <a target="_blank">条款规定</a>
+              <a target="_blank">网站地图</a>
+            </div>
+            <div id="copyright">
+              <span>Copyright © 2015 All Rights Reserved. 版权所有  粤ICP备0000000000号</span>
+              <a href="" target="_blank" style="margin-left:10px;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fileinput.js" type="text/javascript"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="js/flag.js"></script>
+    <script src="js/jquery.validate.js"></script>
+
+    <script>
+     window.onload = function (){
+        checkHeight();
+      }
+
+
+      $(".uploadAndroid").fileinput({                       //安卓上传安装包
+        showUpload: true,                                     //显示上传按钮-显示
+        showCaption: false,                                   //显示标题-不显示
+        allowedPreviewTypes:['image'],                        //设置只有img可以预览
+        showRemove: false,                                    //显示移除按钮-不显示
+        allowedFileExtensions : ['apk'],                      //允许上传的文件格式
+        dropZoneEnabled: false,                               //取消拖拽上传区域
+        maxFileCount: 1,                                      //上传最大数量
+        uploadAsync: false,                                   //异步上传-false:否，true:是
+        uploadUrl: "server/upload.txt"                       //上传地址
+      });
+
+      $(".uploadAndroidicon").fileinput({                   //安卓上传图标
+        maxImageWidth: 72,                                    //最大宽度
+          maxImageHeight: 72,                                   //最大高度
+        showUpload: true,                                     //显示上传按钮-显示
+        showCaption: false,                                   //显示标题-不显示
+        allowedPreviewTypes:['image'],                        //设置只有img可以预览
+        showRemove: false,                                    //显示移除按钮-不显示
+        allowedFileExtensions : ['jpg','png'],                //允许上传的文件格式
+        dropZoneEnabled: false,                               //取消拖拽上传区域
+        maxFileCount: 1,                                      //上传最大数量
+        uploadAsync: false,                                   //异步上传-false:否，true:是
+        uploadUrl: "server/upload.txt"                       //上传地址
+      });
+
+      $(".uploadAndroidcutimg").fileinput({                 //安卓上传图片
+        maxImageWidth: 1000,                                  //最大宽度
+          maxImageHeight: 2000,                               //最大高度
+        showUpload: true,                                     //显示上传按钮-显示
+        showCaption: false,                                   //显示标题-不显示
+        allowedPreviewTypes:['image'],                        //设置只有img可以预览
+        showRemove: false,                                    //显示移除按钮-不显示
+        allowedFileExtensions : ['jpg','png'],                //允许上传的文件格式
+        dropZoneEnabled: false,                               //取消拖拽上传区域
+        maxFileCount: 5,                                      //上传文件最大数量
+        minFileCount: 3,                                      //上传文件最小数量
+        uploadAsync: false,                                   //异步上传-false:否，true:是
+        uploadUrl: "server/upload.txt"                       //上传地址
+      });
+
+      $(function(){
+          //jquery.validate
+        $(".jsForm").validate({
+          submitHandler: function() {
+            //验证通过后 的js代码写在这里
+          }
+        })
+      })
+
+      $.validator.setDefaults({
+        errorElement:'span'
+      });
+    </script>
+  </body>
+</html>

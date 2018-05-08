@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>葵果前台门户首页</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/qiantai.css" rel="stylesheet">
+    <style type="text/css">
+      .hides{display:none;} 
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="overflow-x: hidden;">
+
+    <div id="container" class="white-shild clearfix">
+      <div id="white-header">
+        <div>
+          <a id="white-logo" class="clearfix" href=""><img src="img/houtaiicon_b.png"></a>
+          <span class="loginplug"><a href="qiantai-login.html">登录</a><i>/</i><a href="qiantai-register.html">注册</a></span>
+          <ul id="header_nav">
+            <li class="current"><a href="qiantai-index.html">首页</a></li>
+            <li><a href="qiantai-product.html">产品介绍</a></li>
+            <li><a href="qiantai-sdk.html">SDK下载</a></li>
+            <li><a href="qiantai-notice.html">葵果动态</a></li>
+            <li><a href="qiantai-faq.html">帮助中心</a></li>
+            <li class="scrollObj"></li>
+          </ul>
+        </div>
+      </div>
+      <div id="banner_first" class="carousel slide white_slide" data-ride="carousel">
+        <!-- Indicators -->
+        <!-- <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        </ol> -->
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item item_list1 active">
+            <div class="carousel-caption"></div>
+          </div>
+          <div class="item item_list2">
+            <div class="carousel-caption"></div>
+          </div>
+          <div class="item item_list3">
+            <div class="carousel-caption"></div>
+          </div>
+        </div>
+        <div style="width:1170px;margin:0 auto;position: absolute;top: 0;left: 50%;margin: 100px 0 0 215px;z-index: 9999;" class="indexloginbar clearfix">
+          <div class="login_tab">
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane fade active in" id="login_ing" aria-labelledby="home-tab">
+                <div class="input-group login_input_group">
+                  <span class="input-group-addon glyphicon glyphicon-user" id="basic-addon1"></span>
+                  <input type="text" class="form-control" placeholder="邮箱或用户名" aria-describedby="basic-addon1">
+                </div>
+                </br>
+                <div class="input-group login_input_group">
+                  <span class="input-group-addon glyphicon glyphicon-link" id="basic-addon1"></span>
+                  <input type="text" class="form-control" placeholder="密码" aria-describedby="basic-addon1">
+                </div>
+                <p class="forget_code"><a href="http://www.baidu.com/">立即注册</a><a href="http://www.baidu.com/">忘记密码？</a></p>
+                <div class="input-group login_input_group identifying_code">
+                  <span class="input-group-addon glyphicon glyphicon-flash"></span>
+                  <input type="text" class="form-control" placeholder="验证码">
+                </div>
+                </br>
+                <button class="btn btn-lg btn-block" type="submit">登录</button>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="register_ing" aria-labelledby="profile-tab">
+                <div class="input-group login_input_group">
+                  <span class="input-group-addon glyphicon glyphicon-user" id="basic-addon1"></span>
+                  <input type="text" class="form-control" placeholder="邮箱或用户名" aria-describedby="basic-addon1">
+                </div>
+                </br>
+                <div class="input-group login_input_group">
+                  <span class="input-group-addon glyphicon glyphicon-flash" id="basic-addon1"></span>
+                  <input type="text" class="form-control" placeholder="密码" aria-describedby="basic-addon1">
+                </div>
+                </br>
+                <button class="btn btn-lg btn-block" type="submit">注册</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="white_main clearfix">
+        <img src="img/3player.png">
+      </div>
+      <div class="banner_sec_shild">
+        <div id="banner_sec" class="carousel slide clearfix">
+          <div class="banner_sec_tit clearfix">
+            <h2>广告形式</h2>
+            <h5>多款样式选择</h5>
+          </div>
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="img/index_ban1.png" alt="...">
+            </div>
+            <div class="item">
+              <img src="img/index_ban2.png" alt="...">
+            </div>
+            <div class="item">
+              <img src="img/index_ban3.png" alt="...">
+            </div>
+            <div class="item">
+              <img src="img/index_ban4.png" alt="...">
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#banner_sec" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#banner_sec" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="white_main clearfix">
+        <div class="main_tit clearfix">
+          <h2>葵果</h2>
+          <img src="img/main-titicon.png">
+        </div>
+        <div id="index_tab">
+            <div class="indextab_menu row">
+              <div class="col-md-2 selected"><i class="checktab tab01"></i><p>自动优化</p></div>
+              <div class="col-md-2"><i class="checktab tab02"></i><p>自售推广</p></div>
+              <div class="col-md-2"><i class="checktab tab03"></i><p>流量交换</p></div>
+              <div class="col-md-2"><i class="checktab tab04"></i><p>独立统计</p></div>
+              <div class="col-md-2"><i class="checktab tab05"></i><p>推广形式</p></div>
+              <div class="col-md-2"><i class="checktab tab06"></i><p>超级稳定</p></div>
+            </div>
+            <div class="indextab_box">
+              <div>
+                <div>&nbsp;&nbsp;&nbsp;从现在起，提升推广收入变得更加简单！不用再每天反复查看、分析、调整不同平台配置，把您的推广流量交由葵果投资管理吧，只需一键开启自动化，葵果将通过基于超过三千亿次的移动推广请求与投放数据分析形成的智能算法，结合最新的RTB实时竞价，智能的匹配您的流量与优质的推广请求，为您获取最大回报！
+                </div>
+                <div>
+                  <img src="img/indextab01.png">
+                </div>
+              </div>
+              <div class="hides">
+                <div>&nbsp;&nbsp;&nbsp;移动推广的投放是一项极为专业的工作，您需要支持推广主指定的推广形式、满足复杂的人群定向需求、做好频次控制、支持不同的计费模式、提供各类数据报表等等...这些都需要一整套昂贵的专业级移动推广投放系统才能实现。葵果的“自售推广”功能就是一套这样的系统，您所有植入葵果SDK的App都已经具备了投放自售的能力！</div>
+                <div><img src="img/indextab02.png"></div>
+              </div>
+              <div class="hides">
+                <div>&nbsp;&nbsp;&nbsp;传统的推广渠道无论是应用商店、厂商预装还是直接投放推广，营销成本都非常巨大，而且需要耗费大量的时间精力。葵果免费的流量交换联盟“交换推广”解决了您的问题，它使您可与使用葵果的几万个应用进行免费交叉推广，不仅获得了优质的用户，同时还能通过多种变现方式帮您实现流量价值最大化，做到鱼与熊掌兼得，推广盈利两不误！</div>
+                <div><img src="img/indextab03.png"></div>
+              </div>
+              <div class="hides">
+                <div>&nbsp;&nbsp;&nbsp;您确定从各推广平台看到的展示和点击数都是真的吗？您还在一家家的登录各推广平台去查看收入吗？您每天都有时间去比较各个平台的eCPM和eCPC，并依此来分配流量吗？您真正的了解您的用户吗？把这一切交给葵果吧，因为葵果不但会告诉您我们独立统计的各项数据，更会努力的为您揭示这些看似复杂的数据之间微妙的关系！</div>
+                <div><img src="img/indextab04.png"></div>
+              </div>
+              <div class="hides">
+                <div>&nbsp;&nbsp;&nbsp;您只使用过横幅推广吗？您知道当前插屏推广的平均eCPM能达到5块钱吗？层出不穷的移动推广形式带来了新鲜的用户体验也为您带来了更高推广收入的可能性。葵果对以上市场上所有主流移动推广形式的全面支持，让您可以更放心的“尝鲜”，大幅提升新推广形式的填充率，进而实现更高的推广收入！</div>
+                <div><img src="img/indextab05.png"></div>
+              </div>
+              <div class="hides">
+                <div>&nbsp;&nbsp;&nbsp;葵果安全架构系统和SDK服务已被超过8万个App信任验证。不仅如此，我们还为您配备了7X24小时的专属媒体顾问和技术支持团队，随时响应并解决您的每一个问题需求，真正为您的App保驾护航到每一分每一秒。更重要的是，葵果拥有领先的云端技术能力，70多家平台合作伙伴的鼎力支持，以及广受赞誉的品牌力量，这一切更是让您再无后顾之忧！</div>
+                <div><img src="img/indextab06.png"></div>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="white_main clearfix">
+        <div class="main_tit clearfix">
+          <h2>海量合作商</h2>
+          <img src="img/main-titicon.png">
+        </div>
+        <div class="partner">
+          <img src="img/partner.png">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="white-main-footer">
+      <div>
+        <div>
+          <ul>
+            <li><a>下载中心</a></li>
+            <li><a>隐私政策</a></li>
+            <li><a>服务条款</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><a>加入我们</a></li>
+            <li><a>联系我们</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Copyright©</li>
+            <li>联系地址：上海市闵行区秀文路868号西子国际中心</li>
+          </ul>
+        </div>
+        <img src="img/houtaiicon_w.png">
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flag.js"></script>
+    <script>
+      window.onload = function (){
+        var a = $(window).height() -230;
+        $(".white-shild").css("min-height",a);
+
+        var $tab_div = $('#index_tab div .col-md-2');
+        $tab_div.hover(function(){
+          $(this).addClass('selected').siblings().removeClass('selected');
+          var index = $tab_div.index(this);
+          $('div.indextab_box > div').eq(index).show().siblings().hide();
+        });
+
+      }
+     $("#header_nav > li").ScrollNav({
+        scrollObj:"#header_nav > .scrollObj", //滑动的对象
+        speed:"fast" //速度
+      });
+     $('#banner_sec').carousel({
+        pause: true,
+        interval: false
+      });
+    </script>
+  </body>
+</html>

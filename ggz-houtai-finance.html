@@ -1,0 +1,431 @@
+  <!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台操作平台</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/houtai.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="container" class="clearfix">
+      <div class="black-sidebar">
+          <div class="black-logo">
+            <a class="demologo"><img src="img/houtaiicon_w.png"></a>
+          </div>
+          <ul class="nav">
+            <li>
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-home"></i>
+                <span>后台首页</span>
+              </a>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-th"></i>
+                <span>广告中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>产品列表</a>
+                </li>
+                <li>
+                  <a>广告列表</a>
+                </li>
+                <li>
+                  <a>广告投放</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-yen"></i>
+                <span>财务中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a class="active">财务信息</a>
+                </li>
+                <li>
+                  <a>快速充值</a>
+                </li>
+                <li>
+                  <a>申请发票</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-user"></i>
+                <span>个人中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>基本信息</a>
+                </li>
+                <li>
+                  <a>修改密码</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      <div class="black-main">
+        <div class="black-main-header">
+          <ul class="clearfix">
+            <li><a><i class="glyphicon glyphicon-user"></i>wufeng030@qq.com</a></li>
+            <li><a><i class="glyphicon glyphicon-off"></i>退出</a></li>
+          </ul>
+        </div>
+        <div class="black-main-body">
+          <div id="houtai-index">
+            <div class="info-shell">
+              <h3>财务信息</h3>
+              <div class="counting-methods">
+                <button type="button" class="btn btn-default btn-lg"><span class="glyphicon glyphicon-th" aria-hidden="true"></span>立即充值</button>
+              </div>
+            </div>
+            <div class="row all-statistics">
+              <div class="col-md-3">
+                <div class="count_myproperty">
+                  <h3>账户余额&nbsp;|&nbsp;<a>充值</a></h3>
+                  <p>￥0.00</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="count_mypay">
+                  <h3>广告支出</h3>
+                  <p>￥0.00</p>
+                </div>
+              </div>
+              <div class="col-md-3" style="float:right;">
+                <section style="background:#fff;padding:10px;border-radius:5px;">
+                  <h5><span class="glyphicon glyphicon-flag" style="color:#21b6b4;"></span>小贴士：</h5>
+                  <p style="color:#999;">1.对公账户转账审核需要3-5个工作日，周六日不在审核时间内。审核通过后充值金额会体现在账号余额中。</p>
+                  <p style="color:#999;">2.除对公账户转账外其他充值通道皆为及时到账。</p>
+                </section>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-striped table-bordered xx-table">
+                <caption class="clearfix">
+                    <h2 class="list-head"><i class="glyphicon glyphicon-list"></i><span>广告主充值记录</span></h2>
+                </caption>
+                <thead>
+                  <tr>
+                    <th>交易号</th>
+                    <th>充值时间</th>
+                    <th>发票抬头</th>
+                    <th>充值方式</th>
+                    <th>充值金额</th>
+                    <th>状态</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>123123123123123</td>
+                    <td>2015-01-25</td>
+                    <td>上海踏娱网络科技有限公司</td>
+                    <td>支付宝</td>
+                    <td class="f_plus"><i></i>￥40.00</td>
+                    <td><span class="label label-default">待审核</span></td>
+                  </tr>
+                  <tr>
+                    <td>123123123123123</td>
+                    <td>2015-01-25</td>
+                    <td>上海踏娱网络科技有限公司</td>
+                    <td>支付宝</td>
+                    <td class="f_minus"><i></i>￥40.00</td>
+                    <td><span class="label label-success">已通过</span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="pagination-shild">
+                <ul class="pagination">
+                  <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+                  <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+               </ul>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="black-main-footer">
+          <div>
+            <div class="footer-nav">
+              <a target="_blank">关于我们</a>
+              <a target="_blank">合作伙伴</a>
+              <a target="_blank">下载中心</a>
+              <a target="_blank">加入我们</a>
+              <a target="_blank">联系我们</a>
+              <a target="_blank">条款规定</a>
+              <a target="_blank">网站地图</a>
+            </div>
+            <div id="copyright">
+              <span>Copyright © 2015 All Rights Reserved. 版权所有  粤ICP备0000000000号</span>
+              <a href="" target="_blank" style="margin-left:10px;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flag.js"></script>
+    <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+    <script>
+     window.onload = function (){
+        checkHeight();
+      }
+
+require.config({
+      paths: {
+          echarts: 'http://echarts.baidu.com/build/dist'
+      }
+  });
+require(
+    [
+        'echarts',
+        'echarts/chart/line' // 使用柱状图就加载bar模块，按需加载
+    ],
+    function (ec) {
+        // 基于准备好的dom，初始化echarts图表
+        var myChart = ec.init(document.getElementById('index_tb_main'));
+            tdate = ['2015-12-17','2015-12-18','2015-12-19','2015-12-20','2015-12-21','2015-12-22','2015-12-23']
+            tdate30 = ['2015-12-17','2015-12-18','2015-12-19','2015-12-20','2015-12-21','2015-12-22','2015-12-23','2015-12-24','2015-12-25','2015-12-26','2015-12-27','2015-12-28','2015-12-29','2015-12-30','2015-12-31','2016-01-01','2016-01-02','2016-01-03','2016-01-04','2016-01-05','2016-01-06','2016-01-07','2016-01-08','2016-01-09','2016-01-10','2016-01-11','2016-01-12','2016-01-13','2016-01-14','2016-01-15']
+            tdate60 = ['2015-12-17','2015-12-18','2015-12-19','2015-12-20','2015-12-21','2015-12-22','2015-12-23','2015-12-24','2015-12-25','2015-12-26','2015-12-27','2015-12-28','2015-12-29','2015-12-30','2015-12-31','2016-01-01','2016-01-02','2016-01-03','2016-01-04','2016-01-05','2016-01-06','2016-01-07','2016-01-08','2016-01-09','2016-01-10','2016-01-11','2016-01-12','2016-01-13','2016-01-14','2016-01-15','2015-12-17','2015-12-18','2015-12-19','2015-12-20','2015-12-21','2015-12-22','2015-12-23','2015-12-24','2015-12-25','2015-12-26','2015-12-27','2015-12-28','2015-12-29','2015-12-30','2015-12-31','2016-01-01','2016-01-02','2016-01-03','2016-01-04','2016-01-05','2016-01-06','2016-01-07','2016-01-08','2016-01-09','2016-01-10','2016-01-11','2016-01-12','2016-01-13','2016-01-14','2016-01-15']
+            vdate = [10, 12, 21, 54, 260, 830, 710]
+            vdate30 = [10, 12, 21, 54, 260, 830, 710,10, 12, 21, 54, 260, 830, 710,10, 12, 21, 54, 260, 830, 710,10, 12, 21, 54, 260, 830, 710,10, 12]
+            vdate60 = [10, 12, 21, 54, 260, 830, 710,10, 12, 21, 54, 260, 830, 710,102, 123, 211, 543, 210, 130, 310,120, 32, 21, 54, 260, 830, 710,10, 12,10, 12, 21, 54, 260, 830, 310,10, 14, 21, 54, 230, 630, 710,10, 12, 21, 54, 250, 830, 710,140, 12, 21, 54, 2360, 8230, 710,10, 12]
+      option = {
+            /*title : {
+                text: '某楼盘销售情况',
+                subtext: '纯属虚构'
+            },*/
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['展示量','点击量','激活量','点击率(%)','激活率(%)','点击单价(￥)','激活单价(￥)','eCPM'],
+                x:'left',
+                y:'bottom'
+            },
+            toolbox: {
+                show : true,
+                /*feature : {
+                    mark : {show: true},
+                    dataView : {show: true, readOnly: true},
+                    magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                    restore : {show: true},
+                    saveAsImage : {show: true}
+                }*/
+            },
+            calculable : false,
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : tdate
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'展示量',
+                    type:'line',
+                    /*smooth:true,
+                    itemStyle: {normal: {areaStyle: {type: 'default'}}},*/
+                    /*markPoint: {clickable: false},*/
+                    data:vdate
+                },
+                {
+                    name:'点击量',
+                    type:'line',
+                    data:[1320, 2822, 134, 491, 190, 60, 40]
+                },
+                {
+                    name:'激活量',
+                    type:'line',
+                    data:[1221, 234, 54, 123, 432, 22, 676]
+                },
+                {
+                    name:'点击率(%)',
+                    type:'line',
+                    data:[13, 36, 51, 24, 77, 44, 66]
+                },
+                {
+                    name:'激活率(%)',
+                    type:'line',
+                    data:[53, 16, 16, 36, 10, 76, 13]
+                },
+                {
+                    name:'点击单价(￥)',
+                    type:'line',
+                    data:[0.25,0.11,0.2, 0.9, 1.1, 2.25, 0.01]
+                },
+                {
+                    name:'激活单价(￥)',
+                    type:'line',
+                    data:[0.15,1.11,2.2, 1.9, 0.1, 0.25, 0.01]
+                }
+                ,
+                {
+                    name:'eCPM',
+                    type:'line',
+                    data:[1, 3, 4, 5, 6, 2, 111]
+                }
+            ]
+        };
+
+        option2 = {
+            /*title : {
+                text: '某楼盘销售情况',
+                subtext: '纯属虚构'
+            },*/
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['积分广告收入'/*,'无积分广告收入'*/],
+                x:'left',
+                y:'bottom'
+            },
+            toolbox: {
+                show : true,
+                /*feature : {
+                    mark : {show: true},
+                    dataView : {show: true, readOnly: true},
+                    magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                    restore : {show: true},
+                    saveAsImage : {show: true}
+                }*/
+            },
+            calculable : false,
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : tdate30
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'积分广告收入',
+                    type:'line',
+                    /*smooth:true,
+                    itemStyle: {normal: {areaStyle: {type: 'default'}}},*/
+                    /*markPoint: {clickable: false},*/
+                    data:vdate30
+                }/*,
+                {
+                    name:'无积分广告收入',
+                    type:'line',
+                    smooth:true,
+                    itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                    data:[30, 182, 434, 791, 390, 30, 10]
+                }*/
+            ]
+        };
+
+        option3 = {
+            /*title : {
+                text: '某楼盘销售情况',
+                subtext: '纯属虚构'
+            },*/
+            tooltip : {
+                trigger: 'axis'
+            },
+            legend: {
+                data:['积分广告收入'/*,'无积分广告收入'*/],
+                x:'left',
+                y:'bottom'
+            },
+            toolbox: {
+                show : true,
+                /*feature : {
+                    mark : {show: true},
+                    dataView : {show: true, readOnly: true},
+                    magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+                    restore : {show: true},
+                    saveAsImage : {show: true}
+                }*/
+            },
+            calculable : false,
+            xAxis : [
+                {
+                    type : 'category',
+                    boundaryGap : false,
+                    data : tdate60
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    name:'积分广告收入',
+                    type:'line',
+                    /*smooth:true,
+                    itemStyle: {normal: {areaStyle: {type: 'default'}}},*/
+                    /*markPoint: {clickable: false},*/
+                    data:vdate60
+                }/*,
+                {
+                    name:'无积分广告收入',
+                    type:'line',
+                    smooth:true,
+                    itemStyle: {normal: {areaStyle: {type: 'default'}}},
+                    data:[30, 182, 434, 791, 390, 30, 10]
+                }*/
+            ]
+        };
+
+        myChart.setOption(option);
+        $("#indexday7").click(function(){
+          myChart.clear();
+          myChart.setOption(option);
+          /*myChart.setOption({xAxis:[{data:tdate}], series:[{data:vdate}]});*/
+        });
+        $("#indexday30").click(function(){
+          myChart.clear();
+          myChart.setOption(option2);
+          /*myChart.setOption({xAxis:[{data:tdate30}], series:[{data:vdate30}]});*/
+        });
+        $("#indexday60").click(function(){
+          myChart.clear();
+          myChart.setOption(option3);
+          /*myChart.setOption({xAxis:[{data:tdate60}], series:[{data:vdate60}]});*/
+        });
+            }
+    );
+    </script>
+  </body>
+</html>

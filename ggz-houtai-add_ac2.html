@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台操作平台</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/houtai.css" rel="stylesheet">
+    <link href="css/fileinput.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="container" class="clearfix">
+      <div class="black-sidebar">
+          <div class="black-logo">
+            <a class="demologo"><img src="img/houtaiicon_w.png"></a>
+          </div>
+          <ul class="nav">
+            <li>
+              <a class="nav-header" href="ggz-houtai-index.html">
+                <i class="icon-home glyphicon glyphicon-home"></i>
+                <span>后台首页</span>
+              </a>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-th"></i>
+                <span>广告中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a href="ggz-houtai-ac-plan.html">产品列表</a>
+                </li>
+                <li>
+                  <a href="ggz-houtai-ac-list.html">广告列表</a>
+                </li>
+                <li>
+                  <a class="active" href="ggz-houtai-add_ac1.html">广告投放</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-yen"></i>
+                <span>财务中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>财务信息</a>
+                </li>
+                <li>
+                  <a>快速充值</a>
+                </li>
+                <li>
+                  <a>申请发票</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-user"></i>
+                <span>个人中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>基本信息</a>
+                </li>
+                <li>
+                  <a>修改密码</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      <div class="black-main">
+        <div class="black-main-header">
+          <ul class="clearfix">
+            <li><a><i class="glyphicon glyphicon-user"></i>wufeng030@qq.com</a></li>
+            <li><a><i class="glyphicon glyphicon-off"></i>退出</a></li>
+          </ul>
+        </div>
+        <div class="black-main-body">
+          <div id="houtai-add">
+            <div class="info-shell">
+              <h3>广告投放-添加/修改广告</h3>
+            </div>
+            <form action="" class="jsForm">
+              <ul class="houtai-form">
+                <li>
+                  <p class="add_app_steps">
+                    <span class="steps_active">创建产品</span>
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" style="color:#5cb85c;"></span>
+                    <span class="steps_active">广告定向设置</span>
+                  </p>
+                  <div class="progress" style="width:360px;height:8px;">
+                    <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 100%">
+                      <span class="sr-only"></span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <h4>广告信息</h4>
+                  <label>广告名称：</label>
+                  <span>
+                    <input name="advertisement-name" class="form-control trim-input demow1" type="text" required data-msg-required="请填写产品名称"/>
+                    <select class="demow2">
+                      <option selected="selected">广告A</option>
+                      <option>广告B</option>
+                    </select>
+                  </span>
+                  <span for="advertisement-name" class="error"></span>
+                </li>
+                <li>
+                  <label>定向日期：</label>
+                  <span id="set_ggz_data">
+                    <input class="date-before" size="16" type="text" value="" data-date="" data-date-format="yyyy-mm-dd" data-link-format="yyyy-mm-dd" required="" name="ggz_cdate" data-msg-required="请选择日期">
+                    &nbsp;-&nbsp;
+                    <input class="date-after" size="16" type="text" value="" data-date="" data-date-format="yyyy-mm-dd" data-link-format="yyyy-mm-dd">
+                  </span>
+                  <span for="ggz_cdate" class="error"></span>
+                </li>
+                <li>
+                  <h4>推广位设置</h4>
+                  <label style="float:left;">广告形式：</label>
+                  <div class="wrap-radio clearfix advertXS">
+
+                    <div class="ad-way-item ad-video-item show-cp">
+                      <img src="img/cpys.png">
+                      <label><input name="ad-format" type="radio" value="2" required data-msg-required="请选择类型">插屏</label>
+                    </div>
+                    <div class="ad-way-item ad-spot-item show-banner">
+                      <img src="img/banys.png">
+                      <label><input name="ad-format" type="radio" value="1">banner条</label>
+                    </div>
+                    <div class="ad-way-item ad-feed-item show-xxl">
+                      <img src="img/tsys.png">
+                      <label><input name="ad-format" type="radio" value="3">信息流</label>
+                    </div>
+                    <div class="ad-way-item ad-feed-item show-kp">
+                      <img src="img/kpys.png">
+                      <label><input name="ad-format" type="radio" value="4">开屏</label>
+                    </div>
+                    <span for="ad-format" class="error"></span>
+                  </div>
+                </li>
+                <!-- <li class="bannerposition">
+                  <label>banner位置：</label>
+                  <span class="d-apptype">
+                    <label><input name="demop" type="radio" value="1" required data-msg-required="请选择类型">顶部</label>
+                    <label><input name="demop" type="radio" value="2">底部</label>
+                  </span>
+                  <span for="demop" class="error"></span>
+                </li>
+                <li class="cpxjseting">
+                  <label>插屏细节设置：</label>
+                  <span class="d-apptype">
+                    <label><input name="demops" type="radio" value="1" required data-msg-required="请选择类型">带关闭按钮</label>
+                    <label><input name="demops" type="radio" value="2">不带关闭按钮</label>
+                  </span>
+                  <span for="demops" class="error"></span>
+                </li>
+                <li>
+                  <label>跳转方式：</label>
+                  <span class="d-apptype">
+                    <label><input name="demopds" type="radio" value="1" required data-msg-required="请选择类型">点击下载</label>
+                    <label><input name="demopds" type="radio" value="2">跳转到第三方页面</label>
+                    <label><input name="demopds" type="radio" value="3">打电话/发短信</label>
+                  </span>
+                  <span for="demopds" class="error"></span>
+                </li>
+                -->
+                <li>
+                  <label>结算设置：</label>
+                  <span class="d-apptype">
+                    <label><input name="g_balance" type="radio" value="1" required data-msg-required="请选择类型">CPM</label>
+                    <label><input name="g_balance" type="radio" value="2">CPC</label>
+                    <label><input name="g_balance" type="radio" value="3">CPA</label>
+                  </span>
+                  <span for="g_balance" class="error"></span>
+                </li>
+                <li class="advertshild">
+                  <label style="float:left;">广告形式演示：</label>
+                  <span class="advertdemo">
+                    <ul>
+                      <li class="advertdemoW">
+                        <a style="display: inline-block;float: left;width: 160px;height: 280px;margin-right:25px;">
+                          <img src="img/cpys.png"><img id="preview1" class="ad_onloadimg1" src="">
+                        </a>
+                      </li>
+                      <li class="advertdemoW">
+                        <a style="display: inline-block;float: left;width: 160px;height: 280px;margin-right:25px;">
+                          <img src="img/banys.png"><img id="preview2" class="ad_onloadimg2" src="">
+                        </a>
+                      </li>
+                      <li class="advertdemoW">
+                        <a style="display: inline-block;float: left;width: 160px;height: 280px;margin-right:25px;">
+                          <img src="img/tsys.png"><img id="preview3" class="ad_onloadimg3" src="">
+                        </a>
+                      </li>
+                      <li class="advertdemoW">
+                        <a style="display: inline-block;float: left;width: 160px;height: 280px;margin-right:25px;">
+                          <img src="img/kpys.png"><img id="preview4" class="ad_onloadimg4" src="">
+                        </a>
+                      </li>
+                    </ul>
+                    <div class="appdetail-hint appdetail-uploadhint">
+                      <a class="btn btn-default upload-btn">上传演示<input type="file" class="docccc" id="doc" onchange="javascript:setImagePreview();"></a>
+                      <p style="width: 450px;">
+                      <strong style="color:#c73e17;">请注意：</strong>这里不作为您的最终选择结果只做<strong style="color:#c73e17;">效果演示</strong><br>应用内展示您上传之后的图像位置和尺寸<br>确定图片后请在下面<strong style="color:#c73e17;">广告图上传</strong>上传您选择好的图片
+                      </p>
+                    </div>
+                  </span>
+                </li>
+                <li class="type-cp show-cp show-all">  <!--插屏-->
+                  <h4>广告图上传</h4>
+                  <label style="float:left;">插屏：</label>
+                  <span class="d-apptype">
+                    <div class="form-group">
+                        <input class="images1024768" type="file" multiple=true>
+                    </div>
+                    <p class="appdetail-hint appdetail-uploadhint">
+                      请将上传尺寸限制在&nbsp;<strong style="color:#c73e17;">1024*768</strong>否则会影响最终效果
+                    </p>
+                  </span>
+                </li>
+                <li class="type-banner show-banner show-all">  <!--banner-->
+                  <h4>广告图上传</h4>
+                  <label style="float:left;">banner：</label>
+                  <span class="d-apptype">
+                    <div class="form-group">
+                        <input class="images72890" type="file" multiple=true>
+                    </div>
+                    <p class="appdetail-hint appdetail-uploadhint">
+                      1.请将上传尺寸限制在&nbsp;<strong style="color:#c73e17;">728*90</strong>否则会影响最终效果
+                    </p>
+                  </span>
+                  <br>
+                  <label style="float:left;"></label>
+                  <span class="d-apptype">
+                    <div class="form-group">
+                        <input class="images1080169" type="file" multiple=true>
+                    </div>
+                    <p class="appdetail-hint appdetail-uploadhint">
+                      2.请将上传尺寸限制在&nbsp;<strong style="color:#c73e17;">1080*169</strong>否则会影响最终效果
+                    </p>
+                  </span>
+                </li>
+                <li class="type-xxl show-xxl show-all">  <!--信息流-->
+                  <h4>广告图上传</h4>
+                  <label style="float:left;">信息流：</label>
+                  <span class="d-apptype">
+                    <div class="form-group">
+                        <input class="images7681024" type="file" multiple=true>
+                    </div>
+                    <p class="appdetail-hint appdetail-uploadhint">
+                      请将上传尺寸限制在&nbsp;<strong style="color:#c73e17;">768*1024</strong>否则会影响最终效果
+                    </p>
+                  </span>
+                </li>
+                <li class="type-kp show-kp show-all">  <!--插屏-->
+                  <h4>广告图上传</h4>
+                  <label style="float:left;">开屏：</label>
+                  <span class="d-apptype">
+                    <div class="form-group">
+                        <input class="images7681024" type="file" multiple=true>
+                    </div>
+                    <p class="appdetail-hint appdetail-uploadhint">
+                      请将上传尺寸限制在&nbsp;<strong style="color:#c73e17;">768*1024</strong>否则会影响最终效果
+                    </p>
+                  </span>
+                </li>
+                <li>
+                  <h4>媒体定向</h4>
+                  <label>交易市场：</label>
+                  <span class="d-apptype">
+                    <label><input name="demo1" type="radio" value="1" checked="checked">全部</label>
+                    <label style="opacity:0.8;"><input name="demo1" type="radio" value="2" disabled>定制</label><span class="appdetail-hint"><i>(定制市场正在洽谈中...即将开放)</i></span>
+                  </span>
+                </li>
+                <li>
+                  <label>选择媒体：</label>
+                  <span class="d-apptype">
+                    <label><input name="chouse-media-type" type="radio" value="1" checked="checked">全部</label>
+                    <label><input name="chouse-media-type" type="radio" value="2">应用类</label>
+                    <label style="opacity:0.8;"><input name="chouse-media-type" type="radio" value="3" disabled>游戏类</label><span class="appdetail-hint"><i>(游戏市场正在洽谈中...即将开放)</i></span>
+                  </span>
+                  <div class="media_app_type clearfix">
+                    <ul class="clearfix">
+                      <li>金融理财</li>
+                      <li>购物电商</li>
+                      <li>丽人母婴</li>
+                      <li>医疗健康</li>
+                      <li>健身健美</li>
+                      <li>体育运动</li>
+                      <li>图书阅读</li>
+                      <li>交通导航</li>
+                      <li>旅游</li>
+                      <li>生活</li>
+                      <li>社交</li>
+                      <li>教育</li>
+                      <li>通讯</li>
+                      <li>壁纸桌面</li>
+                      <li>系统工具</li>
+                      <li>摄影摄像</li>
+                      <li>效率办公</li>
+                      <li>视频</li>
+                      <li>音乐</li>
+                      <li>网赚手赚</li>
+                      <li>汽车</li>
+                      <li>其他</li>
+                    </ul>
+                  </div>
+                  <div class="game_app_type clearfix">
+                    <ul class="clearfix">
+                      <li>角色扮演</li>
+                      <li>网络游戏</li>
+                      <li>卡牌游戏</li>
+                      <li>策略游戏</li>
+                      <li>动作游戏</li>
+                      <li>冒险闯关</li>
+                      <li>休闲益智</li>
+                      <li>消除游戏</li>
+                      <li>智力游戏</li>
+                      <li>体育游戏</li>
+                      <li>跑酷竞速</li>
+                      <li>飞行射击</li>
+                      <li>街机游戏</li>
+                      <li>塔防守卫</li>
+                      <li>扑克棋牌</li>
+                      <li>娱乐场所</li>
+                      <li>桌面游戏</li>
+                      <li>骰子游戏</li>
+                      <li>教育游戏</li>
+                      <li>家庭游戏</li>
+                      <li>文字游戏</li>
+                      <li>音乐游戏</li>
+                      <li>模拟游戏</li>
+                      <li>小游戏</li>
+                      <li>其他游戏</li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <h4>定向选择</h4>
+                  <label style="float:left;">时间定向：</label>
+                  <span class="d-apptype">
+                    <label><input name="demo4" type="radio" value="1" checked="checked">全部</label><br>
+                    <label><input name="demo4" type="radio" value="2">凌晨时段（24:00-6:00）</label><br>
+                    <label><input name="demo4" type="radio" value="2">上午时段（6:00-12:00）</label><br>
+                    <label><input name="demo4" type="radio" value="2">下午时段（12:00-18:00）</label><br>
+                    <label><input name="demo4" type="radio" value="2">夜晚时段（18:00-24:00）</label>
+                  </span>
+                </li>
+                <li>
+                  <label style="float:left;">地域定向：</label>
+                  <span class="d-apptype">
+                    <label><input name="demo5" type="radio" value="1" checked="checked">全部</label><br>
+                    <label><input name="demo5" type="radio" value="2">华北地区（北京，天津，河北，山西，内蒙古）</label><br>
+                    <label><input name="demo5" type="radio" value="2">华东地区（上海，江苏，浙江，山东，安徽）</label><br>
+                    <label><input name="demo5" type="radio" value="2">华中地区（湖北，湖南，河南，江西）</label><br>
+                    <label><input name="demo5" type="radio" value="2">华南地区（广东，广西，海南，福建）</label><br>
+                    <label><input name="demo5" type="radio" value="2">西南地区（四川，重庆，贵州，云南，西藏）</label><br>
+                    <label><input name="demo5" type="radio" value="2">西北地区（陕西，甘肃，新疆，青海，宁夏）</label><br>
+                    <label style="opacity:0.8;"><input name="demo4" type="radio" value="2" disabled>港澳台地区（包括台湾、香港、澳门）<span class="appdetail-hint"><i>此地区暂未开放</i></span></label>
+                  </span>
+                </li>
+                <li>
+                  <h4>频次控制</h4>
+                  <label style="float:left;">广告曝光频次：</label>
+                  <span class="se_in_btn-group pc-ctla">
+                    <select>
+                      <option value="1">不限</option>
+                      <option value="2">每日</option>
+                      <option value="3">每周</option>
+                    </select>
+                    <input type="text" class="form-control" readonly="readonly">
+                  </span>
+                  <span>次/人</span>
+                </li>
+                <li>
+                  <label style="float:left;">广告点击频次：</label>
+                  <span class="se_in_btn-group pc-ctlb">
+                    <select>
+                      <option value="1">不限</option>
+                      <option value="2">每日</option>
+                      <option value="3">每周</option>
+                    </select>
+                    <input type="text" class="form-control" readonly="readonly">
+                  </span>
+                  <span>次/人</span>
+                </li>
+                <li>
+                  <h4>广告出价</h4>
+                  <label style="float:left;">最高出价：</label>
+                  <span><input name="ad-bid" type="text" class="form-control trim-input" required data-msg-required="必填项"></span>
+                  <span class="g_offer">元/千次展示</span>
+                  <span class="appdetail-hint g_offtip"></span>
+                  <span for="ad-bid" class="error"></span>
+                </li>
+                <li>
+                  <label style="float:left;">每日预算：</label>
+                  <span><input name="daily-budget" type="text" class="form-control trim-input" required data-msg-required="必填项，建议选择100元以上"></span>
+                  <span>元</span>
+                  <span for="daily-budget" class="error"></span>
+                </li>
+              </ul>
+              <div class="tj-button">
+                <button type="button" class="btn btn-default">上一步</button>
+                <button type="submit" class="btn btn-default btn-lg a-custom-btn">提交审核</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="black-main-footer">
+          <div>
+            <div class="footer-nav">
+              <a target="_blank">关于我们</a>
+              <a target="_blank">合作伙伴</a>
+              <a target="_blank">下载中心</a>
+              <a target="_blank">加入我们</a>
+              <a target="_blank">联系我们</a>
+              <a target="_blank">条款规定</a>
+              <a target="_blank">网站地图</a>
+            </div>
+            <div id="copyright">
+              <span>Copyright © 2015 All Rights Reserved. 版权所有  粤ICP备0000000000号</span>
+              <a href="" target="_blank" style="margin-left:10px;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="js/fileinput.js" type="text/javascript"></script>
+    <script src="js/flag.js"></script>
+    <script src="js/jquery.validate.js"></script>
+
+
+
+    <script>
+     window.onload = function (){
+      /*------------演示代码可删除------------*/
+        if(getUrlParam('id') == 1){
+          //console.log("id=1");
+          $(".demow1").remove();      //移除input只显示select
+          $(".show-banner").remove(); //当选择类型是插屏时候移除其他上传控件
+          //$(".show-cp").remove();     //同上
+          $(".show-xxl").remove();    //同上
+          $(".show-kp").remove();     //同上
+        }else{
+          $(".demow2").remove();
+        }
+       /*------------演示代码可删除------------*/
+        checkHeight();
+        showImgPreview();
+      }
+
+      $(".images7681024").fileinput({                    //上传信息，开屏流图片
+        maxImageWidth: 768,
+          maxImageHeight: 1024,
+        showUpload: true,                                     //显示上传按钮-显示
+        showCaption: false,                                   //显示标题-不显示
+        allowedPreviewTypes:['image'],                        //设置只有img可以预览
+        showRemove: false,                                    //显示移除按钮-不显示
+        allowedFileExtensions : ['jpg','png'],                //允许上传的文件格式
+        dropZoneEnabled: false,                               //取消拖拽上传区域
+        maxFileCount: 3,                                      //上传最大数量
+        uploadAsync: false,                                   //异步上传-false:否，true:是
+        uploadUrl: "server/upload.txt"                       //上传地址
+      });
+
+      $(".images72890").fileinput({                    //上传banner图片-pad尺寸
+        maxImageWidth: 728,
+        maxImageHeight: 90,
+        minImageWidth: 728,
+        minImageHeight: 90,
+        showUpload: true,                                     //显示上传按钮-显示
+        showCaption: false,                                   //显示标题-不显示
+        allowedPreviewTypes:['image'],                        //设置只有img可以预览
+        showRemove: false,                                    //显示移除按钮-不显示
+        allowedFileExtensions : ['jpg','png'],                //允许上传的文件格式
+        dropZoneEnabled: false,                               //取消拖拽上传区域
+        maxFileCount: 1,                                      //上传最大数量
+        uploadAsync: false,                                   //异步上传-false:否，true:是
+        uploadUrl: "server/upload.txt"                       //上传地址
+      });
+
+      $(".images1080169").fileinput({                    //上传banner图片-手机尺寸
+        maxImageWidth: 1080,
+          maxImageHeight: 169,
+        showUpload: true,                                     //显示上传按钮-显示
+        showCaption: false,                                   //显示标题-不显示
+        allowedPreviewTypes:['image'],                        //设置只有img可以预览
+        showRemove: false,                                    //显示移除按钮-不显示
+        allowedFileExtensions : ['jpg','png'],                //允许上传的文件格式
+        dropZoneEnabled: false,                               //取消拖拽上传区域
+        maxFileCount: 1,                                      //上传最大数量
+        uploadAsync: false,                                   //异步上传-false:否，true:是
+        uploadUrl: "server/upload.txt"                       //上传地址
+      });
+
+      $(".images1024768").fileinput({                    //上传插屏图片
+        maxImageWidth: 1024,
+          maxImageHeight: 768,
+        showUpload: true,                                     //显示上传按钮-显示
+        showCaption: false,                                   //显示标题-不显示
+        allowedPreviewTypes:['image'],                        //设置只有img可以预览
+        showRemove: false,                                    //显示移除按钮-不显示
+        allowedFileExtensions : ['jpg','png'],                //允许上传的文件格式
+        dropZoneEnabled: false,                               //取消拖拽上传区域
+        maxFileCount: 1,                                      //上传最大数量
+        uploadAsync: false,                                   //异步上传-false:否，true:是
+        //uploadUrl: "server/upload.txt"                       //上传地址
+      });
+
+
+      $(function(){
+          //jquery.validate
+        $(".jsForm").validate({
+          submitHandler: function() {
+            //验证通过后 的js代码写在这里
+            widow.location.href ="ggz-houtai-add_ac1.html"
+          }
+        })
+      })
+      $.validator.setDefaults({
+        errorElement:'span'
+      });
+    </script>
+  </body>
+</html>

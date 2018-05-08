@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>葵果前台门户首页</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/qiantai.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="container" class="white-shild clearfix">
+      <div id="white-header">
+        <div>
+          <a id="white-logo" class="clearfix" href=""><img src="img/houtaiicon_b.png"></a>
+          <span class="loginplug"><a href="qiantai-login.html">登录</a><i>/</i><a href="qiantai-register.html">注册</a></span>
+          <ul id="header_nav">
+            <li><a href="qiantai-index.html">首页</a></li>
+            <li><a href="qiantai-product.html">产品介绍</a></li>
+            <li><a href="qiantai-sdk.html">SDK下载</a></li>
+            <li><a href="qiantai-notice.html">葵果动态</a></li>
+            <li><a href="qiantai-faq.html">帮助中心</a></li>
+            <li class="scrollObj"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="white_main clearfix">
+        <div class="qiantai_act clearfix">
+          <h2 class="tipdone">恭喜注册成功</h2>
+          <h3>我们已经向您的邮箱：<a class="tipdone">wufeng030@qq.com</a>发送了一封邮件</h3>
+          <h3>请点击邮箱内的激活链接对账户进行激活</h3>
+          <button type="button" class="btn btn-success">点击进入邮箱激活</button>
+        </div>
+        <div class="qiantai_amtip">
+          <h4 style="font-weight:bold;color:#333;">还没收到验证邮件？</h4>
+          <p>1.网络会有一定的延迟，请稍等几分钟重新进入</p>
+          <p>2.可能被邮箱过滤，请到广告邮件, 垃圾邮件或者相关的邮件归档中查看</p>
+          <p>3.请确认一下email地址是否拼写错误，您可以用正确的邮箱地址重新注册</p>
+          <p>4.您可以尝试再次发送&nbsp;&nbsp;<button type="button" class="btn btn-default">点击再次发送</button></p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="white-main-footer">
+      <div>
+        <div>
+          <ul>
+            <li><a>下载中心</a></li>
+            <li><a>隐私政策</a></li>
+            <li><a>服务条款</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><a>加入我们</a></li>
+            <li><a>联系我们</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>Copyright©</li>
+            <li>联系地址：上海市闵行区秀文路868号西子国际中心</li>
+          </ul>
+        </div>
+        <img src="img/houtaiicon_w.png">
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flag.js"></script>
+    <script>
+      window.onload = function (){
+        var a = $(window).height() -230;
+        $(".white-shild").css({
+            "min-height":a,
+            "background":"#f5f5f5"
+          });
+      }
+     $("#header_nav > li").ScrollNav({
+        scrollObj:"#header_nav > .scrollObj", //滑动的对象
+        speed:"fast" //速度
+      });
+    </script>
+  </body>
+</html>

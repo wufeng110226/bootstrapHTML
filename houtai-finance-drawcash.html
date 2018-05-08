@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台操作平台</title>
+
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/houtai.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="container" class="clearfix">
+      <div class="black-sidebar">
+          <div class="black-logo">
+            <a class="demologo"><img src="img/houtaiicon_w.png"></a>
+          </div>
+          <ul class="nav">
+            <li>
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-home"></i>
+                <span>后台首页</span>
+              </a>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-th"></i>
+                <span>应用中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>应用列表</a>
+                </li>
+                <li>
+                  <a>详细信息</a>
+                </li>
+                <li>
+                  <a>广告设置</a>
+                </li>
+                <li>
+                  <a>添加应用</a>
+                </li>
+                <li>
+                  <a>SDK下载</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-signal"></i>
+                <span>数据中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>收入报表</a>
+                </li>
+                <li>
+                  <a>应用报表</a>
+                </li>
+                <li>
+                  <a>用户报表</a>
+                </li>
+                <li>
+                  <a>统计</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-yen"></i>
+                <span>财务中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>财务记录</a>
+                </li>
+                <li>
+                  <a>通知设置</a>
+                </li>
+                <li>
+                  <a class="active">申请提款</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-user"></i>
+                <span>个人中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>基本信息</a>
+                </li>
+                <li>
+                  <a>财务信息设置</a>
+                </li>
+                <li>
+                  <a>修改密码</a>
+                </li>
+                <li>
+                  <a>我的消息</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      <div class="black-main">
+        <div class="black-main-header">
+          <ul class="clearfix">
+            <li><a><i class="glyphicon glyphicon-user"></i>wufeng030@qq.com</a></li>
+            <li><a><i class="glyphicon glyphicon-off"></i>退出</a></li>
+          </ul>
+        </div>
+        <div class="black-main-body">
+          <div id="houtai-finance-drawcash">
+            <div class="info-shell">
+              <h3>申请提款</h3>
+            </div>
+            <div class="big_tips_shild">
+              <div>
+                <h5>打款周期说明：</h5>
+                <p>
+                  <strong>
+                  Android媒介周结，iOS媒介月结。<br>
+                  有米每周审核上周一至上周日的Android提款申请，款项于周三汇出；<br>
+                  每月最后一个星期三处理上周及之前的iOS媒介提款请求并打款。
+                  </strong>
+                </p>
+                <h5>可提款余额说明</h5>
+                <p>提款只能提取<strong>“可提款余额”</strong>所示的金额。</p>
+                <p>由于有米提款只能提取正整数金额，所以周结后的“可提款余额”是“账户余额”的<strong>正整数</strong>。</p>
+                <h5>发票事项：</h5>
+                <p>开发者在平台提款，需要依法提供等同金额的信息服务费或广告费发票，如无法提供发票的，我司将在当地税务局为开发者开具等额的劳务费发票。</p>
+                <h5>（个人或团队开发者）不提供发票：</h5>
+                <p>有米将按国家规定代扣代缴劳务需征的税费。<a>扣税详情请见此公告</a></p>
+                <p>团队人数<strong>仅包含</strong>已通过审核的团队成员数。</p>
+                <h5>（个人、团队或公司开发者）提供发票：</h5>
+                <dl>
+                  <dt>发票金额：</dt>
+                  <dd>必须与提款金额一致。</dd>
+                  <dt>发票类型：</dt>
+                  <dd>目前我们只收抬头为<strong>“淮安有米信息科技有限公司”</strong>的信息服务费、广告费发票。所提供发票必须真实有效且时间为三个月内<a>（开发者发票要求说明）</a>。<i></i></dd>
+                  <dt>发票样本：</dt>
+                  <dd><a>点击查看增值税专用发票样本</a>（需在正确位置盖上发票专用章）<i></i></dd>
+                  <dt>邮寄说明：</dt>
+                  <dd>请保持发票界面简洁，可附上纸条注明账号和提款申请号（不要在任何地方涂画）</dd>
+                  <dt>寄送时间：</dt>
+                  <dd>发票需要在提款申请被处理前寄到</dd>
+                  <dt>寄送方式：</dt>
+                  <dd>为发票的安全性及打款的及时性，建议顺丰邮寄到广州总部（邮费自理）</dd>
+                  <dt>地址：</dt>
+                  <dd>广州大学城东三路国家数字家庭研发基地（东区）B栋224</dd>
+                  <dt>邮编：</dt>
+                  <dd>510006</dd>
+                                      <dt>收件人：</dt>
+                  <dd><strong>陈小姐</strong></dd>
+                  <dt>联系电话：</dt>
+                  <dd><strong>13632455291</strong></dd>
+                  <dt>特别注意：</dt>
+                  <dd>
+                    如遇以下情况提款申请将延期打款：
+                    <ul>
+                        <li>发票出现错误（会通知开发者说明情况并回寄）</li>
+                        <li>在有米提款申请处理日期间，发票没有寄到</li>
+                    </ul>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+            <form action="" style="width:60%;">
+              <ul class="houtai-form">
+                <li>
+                  <h4>银行信息<span class="appdetail-hint">请确认您的银行信息，或者<a>修改银行信息</a></h4>
+                  <label>开户人姓名：</label>
+                  <span>陈浩</span>
+                </li>
+                <li>
+                  <label>身份状态：</label>
+                  <span class="label label-success">审核通过</span><span class="label label-danger">未审核</span>
+                </li>
+                <li>
+                  <label>银行账号：</label>
+                  <span>622609<a>*********</a>7481</span>
+                </li>
+                <li>
+                  <label>开户银行：</label>
+                  <span>中国招商银行-上海分行古北支行</span>
+                </li>
+                <li>
+                  <label>所在地区：</label>
+                  <span>上海市-上海</span>
+                </li>
+                <li>
+                  <label>账户余额：</label>
+                  <span>￥532.085</span>
+                </li>
+                <li>
+                  <label>可提款余额：</label>
+                  <span>￥532.000</span>
+                </li>
+                <li>
+                  <label>发票方式：</label>
+                  <span class="d-apptype">
+                    <label><input id="" name="d-invoice" type="radio" value="1">不提供发票</label>
+                    <label><input id="" name="d-invoice" type="radio" value="2">提供发票</label>
+                  </span>
+                </li>
+                <li>
+                  <label>本月累计提款：</label>
+                  <span>￥0.000000</span>
+                </li>
+                <li>
+                  <label>提款金额：</label>
+                  <span><input type="text" class="form-control trim-input" value="100"></span>
+                  <p class="appdetail-hint"><span class="glyphicon glyphicon-eye-open" style="color:#c73e17;"></span>&nbsp;&nbsp;<i>注意：提款金额需为整元，并且不少于100元。</i></p>
+                </li>
+                <li>
+                  <label>打款单位：</label>
+                  <span>深圳市淡乐讯科技开发服务部</span>
+                </li>
+              </ul>
+              <div class="tj-button">
+              <button type="button" class="btn btn-default btn-lg a-custom-btn">确认提交</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="black-main-footer">
+          <div>
+            <div class="footer-nav">
+              <a target="_blank">关于我们</a>
+              <a target="_blank">合作伙伴</a>
+              <a target="_blank">下载中心</a>
+              <a target="_blank">加入我们</a>
+              <a target="_blank">联系我们</a>
+              <a target="_blank">条款规定</a>
+              <a target="_blank">网站地图</a>
+            </div>
+            <div id="copyright">
+              <span>Copyright © 2015 All Rights Reserved. 版权所有  粤ICP备0000000000号</span>
+              <a href="" target="_blank" style="margin-left:10px;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flag.js"></script>
+    <script>
+     window.onload = function (){
+        checkHeight();
+      }
+    </script>
+  </body>
+</html>

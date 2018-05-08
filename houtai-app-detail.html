@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台操作平台</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/houtai.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div id="container" class="clearfix">
+      <div class="black-sidebar">
+          <div class="black-logo">
+            <a class="demologo"><img src="img/houtaiicon_w.png"></a>
+          </div>
+          <ul class="nav">
+            <li>
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-home"></i>
+                <span>后台首页</span>
+              </a>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-th"></i>
+                <span>应用中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>应用列表</a>
+                </li>
+                <li>
+                  <a class="active">详细信息</a>
+                </li>
+                <li>
+                  <a>广告设置</a>
+                </li>
+                <li>
+                  <a>添加应用</a>
+                </li>
+                <li>
+                  <a>SDK下载</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-signal"></i>
+                <span>数据中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>收入报表</a>
+                </li>
+                <li>
+                  <a>应用报表</a>
+                </li>
+                <li>
+                  <a>用户报表</a>
+                </li>
+                <li>
+                  <a>统计</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-yen"></i>
+                <span>财务中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>财务记录</a>
+                </li>
+                <li>
+                  <a>通知设置</a>
+                </li>
+                <li>
+                  <a>申请提款</a>
+                </li>
+              </ul>
+            </li>
+            <li class="has-sub">
+              <a class="nav-header">
+                <i class="icon-home glyphicon glyphicon-user"></i>
+                <span>个人中心</span>
+              </a>
+              <ul class="nav">
+                <li>
+                  <a>基本信息</a>
+                </li>
+                <li>
+                  <a>财务信息设置</a>
+                </li>
+                <li>
+                  <a>修改密码</a>
+                </li>
+                <li>
+                  <a>我的消息</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      <div class="black-main">
+        <div class="black-main-header">
+          <ul class="clearfix">
+            <li><a><i class="glyphicon glyphicon-user"></i>wufeng030@qq.com</a></li>
+            <li><a><i class="glyphicon glyphicon-off"></i>退出</a></li>
+          </ul>
+        </div>
+        <div class="black-main-body">
+          <div id="houtai-appdetail">
+            <div class="appdetail-shell">
+              <div class="btn-group choose-app">
+                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Default <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-default btn-lg a-custom-btn"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加应用</button>
+            </div>
+            <form action="" class="jsForm">
+              <ul class="houtai-form">
+                <li>
+                  <label>应用名称：</label>
+                  <span><input type="text" class="form-control trim-input" value="钱啊" required data-msg-required="请输入应用名称"/></span>
+                </li>
+                <li>
+                  <label>应用状态：</label>
+                  <span class="label label-success">运行中</span>
+                  <span class="label label-danger">未运行</span>
+                </li>
+                <li>
+                  <label>更新应用：</label>
+                  <span class="d-apptype">
+                    <label><input id="ios-appstore" name="app-chouse-type" type="radio" value="1" required required data-msg-required="这里必须选择一项，并且完善此项内容">方法一：提供嵌入广告的应用在苹果应用商店链接</label>
+                    <label><input id="b-upload" name="app-chouse-type" type="radio" value="2">方法二：请上传嵌入有米广告的应用的<strong>ipa</strong>格式的程序包，文件大小不超过<strong>50M</strong></label>
+                  </span>
+                  <span for="app-chouse-type" class="error"></span>
+                </li>
+                <li class="appstore_display">
+                  <label style="float:left;">商店链接：</label>
+                  <span>
+                    <input type="text" placeholder="http://itunes.apple.com/" class="form-control trim-input">
+                    <p class="appdetail-hint appdetail-uploadhint">示例：http://itunes.apple.com/cn/app/id***<br>说明：如果应用尚未通过商店审核，建议您使用方法二</p>
+                  </span>
+                </li>
+                <li class="upload_app_dispaly">
+                  <label style="float:left;">上传应用：</label>
+                  <span class="d-apptype">
+                    <p><a class="btn btn-default upload-btn">上传IPA<input type="file"></a></p>
+                    <label>
+                      大小：<span class="apk-size">2.42MB</span>
+                      包名：<span class="apk-package">com.tayu.qiana</span>
+                      应用版本号：<span class="apk-version-name">1.0.0</span>
+                    </label>
+                    <p class="appdetail-hint appdetail-uploadhint">
+                      请将成功嵌入有米广告的安装包进行上传（安装包建议全英命名)，文件大小超过<strong style="color:#c73e17;">50M</strong>,请发送邮件并附上应用名、包名以及3-5张应用截图到<a href="wufeng030@qq.com"><strong style="color:#c73e17;">wufeng030@qq.com</strong></a>。<br>上传成功后，我们将在每个<strong style="color: #c73e17;">工作日的9:00-11:00</strong>进行审核;审核通过即为“运行”状态，可获得正式广告
+                    </p>
+                  </span>
+                </li>
+                <li>
+                  <label>发布ID：</label>
+                  <span><input type="text" class="form-control trim-input" value="123123123123" readonly="true"></span><span class="appdetail-hint">可复制，无法修改，嵌入SDK时使用，<i>一个ID只能对应一个应用包名</i></span>
+                </li>
+                <li>
+                  <label>应用密钥：</label>
+                  <span><input type="text" class="form-control trim-input" value="asdasdasda" readonly="true"></span><span class="appdetail-hint">可复制，无法修改，嵌入SDK时使用，此应用的专属密钥</span>
+                </li>
+                <li>
+                  <label>应用类型：</label>
+                  <span>
+                    <select class="ad-chouse-select"  name="select1" required data-msg-required="请选择类型">
+                          <option value="">请选择</option>
+                          <option value="1">[软件]多媒体软件</option>
+                          <option value="2">[软件]系统软件</option>
+                          <option value="3">[软件]实用软件</option>
+                          <option value="4">[软件]通讯辅助</option>
+                          <option value="5">[软件]网络应用</option>
+                          <option value="6">[软件]安全软件</option>
+                          <option value="7">[软件]其他</option>
+                          <option value="8">[游戏]角色扮演</option>
+                          <option value="9">[游戏]动作格斗</option>
+                          <option value="10">[游戏]体育竞技</option>
+                          <option value="11">[游戏]射击飞行</option>
+                          <option value="12">[游戏]策略回合</option>
+                          <option value="13">[游戏]冒险模拟</option>
+                          <option value="14">[游戏]休闲趣味</option>
+                          <option value="15">[游戏]棋牌益智</option>
+                    </select>
+                  </span>
+                </li>
+                <li>
+                  <label>关键字：</label>
+                  <span><input name="add_kewword" class="form-control trim-input" type="text" required data-msg-required="不能为空"/></span>
+                  <span for="add_kewword" class="error"></span>
+                </li>
+                <li>
+                  <label>应用平台：</label>
+                  <span class="label label-success">ios</span><span class="label label-success">Android</span>
+                </li>
+
+                <li class="appicon_display">
+                  <label style="float:left;">应用图标：</label>
+                  <span class="d-apptype">
+                    <p><img class="logo-realtime"><a class="btn btn-default upload-btn">上传IPA<input type="file"></a></p>
+                    <p class="appdetail-hint appdetail-uploadhint">
+                      请上传尺寸不小于 72x72 , 宽高相等，大小不超过1M, 格式为 png, jpg, jpeg 的图标
+                    </p>
+                  </span>
+                </li>
+                <li class="screenshot_display">
+                  <label style="float:left;">应用截图：</label>
+                  <span class="d-apptype">
+                    <ul class="add_jietu">
+                      <li><img><a>点击删除截图</a></li>
+                      <li><img><a>点击删除截图</a></li>
+                      <li><img><a>点击删除截图</a></li>
+                      <li><img><a>点击删除截图</a></li>
+                      <li><img><a>点击删除截图</a></li>
+                    </ul>
+                    <a class="btn btn-default upload-btn">上传IPA<input type="file"></a>
+                    <p class="appdetail-hint appdetail-uploadhint">
+                     请上传<strong style="color:#c73e17;">3-5张</strong>应用截图，其中至少1张为<strong style="color: #c73e17;">应用内展示有米广告的截图</strong>，否则无法通过审核。<br><strong style="color:#c73e17;">截图要求：</strong>宽度不小于320，高度不小于480高度大于宽度，格式为PNG，JPG，JPEG的截图，大小不超过1M。
+                    </p>
+                  </span>
+                </li>
+
+                <li>
+                  <label style="float:left;">应用状态：</label>
+                  <span>
+                    <textarea name="add_textarea" class="" cols="120" rows="5" required data-msg-required="不能为空">钱啊是国内领先的流量分发渠道，用户下载APP试玩体验，即可获得相应的现金。分享给好友有提成收益。这是一款让你越来越有钱的APP！！载平台会根据应用的搜索数据为Apps量身定制最佳的搜索优化解决方案，开创了一种全新的最高效的应用推广方式。</textarea>
+                  </span>
+                  <span for="add_textarea" class="error"></span>
+                </li>
+              </ul>
+              <div class="tj-button">
+                <button type="submit" class="btn btn-default btn-lg a-custom-btn">确认保存</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="black-main-footer">
+          <div>
+            <div class="footer-nav">
+              <a target="_blank">关于我们</a>
+              <a target="_blank">合作伙伴</a>
+              <a target="_blank">下载中心</a>
+              <a target="_blank">加入我们</a>
+              <a target="_blank">联系我们</a>
+              <a target="_blank">条款规定</a>
+              <a target="_blank">网站地图</a>
+            </div>
+            <div id="copyright">
+              <span>Copyright © 2015 All Rights Reserved. 版权所有  粤ICP备0000000000号</span>
+              <a href="" target="_blank" style="margin-left:10px;">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flag.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script>
+     window.onload = function (){
+        checkHeight();
+        checkradio();
+      }
+
+
+      $(function(){
+          //jquery.validate
+        $(".jsForm").validate({
+          submitHandler: function() {
+            //验证通过后 的js代码写在这里
+          }
+        })
+      })
+      $.validator.setDefaults({
+        errorElement:'span'
+      });
+    </script>
+  </body>
+</html>

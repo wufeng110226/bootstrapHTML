@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>葵果前台门户首页</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/qiantai.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body id="login-shild">
+
+    <div id="container" class="clearfix">
+      <div class="single_login clearfix">
+        <div class="login_tab">
+          <h4><a href="./qiantai-index.html" class="glyphicon glyphicon-home"></a>注册</h4>
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#login_ing" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true"><i></i>开发者</a></li>
+            <li role="presentation" class=""><a href="#register_ing" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false"><i></i>广告主</a></li>
+          </ul>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade active in" id="login_ing" aria-labelledby="home-tab">
+              <div class="input-group login_input_group">
+                <span class="input-group-addon glyphicon glyphicon-cog"></span>
+                <input type="text" class="form-control" placeholder="邮箱或用户名">
+              </div>
+              </br>
+              <div class="input-group login_input_group">
+                <span class="input-group-addon glyphicon glyphicon-link"></span>
+                <input type="text" class="form-control" placeholder="密码">
+              </div>
+              </br>
+              <div class="input-group login_input_group">
+                <span class="input-group-addon glyphicon glyphicon-link"></span>
+                <input type="text" class="form-control" placeholder="确认密码">
+              </div>
+              </br>
+              <div class="input-group login_input_group identifying_code">
+                <span class="input-group-addon glyphicon glyphicon-flash"></span>
+                <input type="text" class="form-control" placeholder="验证码">
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="register_ing" aria-labelledby="profile-tab">
+              <div class="input-group login_input_group">
+                <span class="input-group-addon glyphicon glyphicon-picture"></span>
+                <input type="text" class="form-control" placeholder="邮箱或用户名">
+              </div>
+              </br>
+              <div class="input-group login_input_group">
+                <span class="input-group-addon glyphicon glyphicon-link"></span>
+                <input type="text" class="form-control" placeholder="密码">
+              </div>
+              </br>
+              <div class="input-group login_input_group">
+                <span class="input-group-addon glyphicon glyphicon-link"></span>
+                <input type="text" class="form-control" placeholder="确认密码">
+              </div>
+              </br>
+              <div class="input-group login_input_group identifying_code">
+                <span class="input-group-addon glyphicon glyphicon-flash"></span>
+                <input type="text" class="form-control" placeholder="验证码">
+              </div>
+            </div>
+            <div>
+              <p class="forget_code"><a href="./qiantai-login.html">已有账户？立即登录</a><a href="">忘记密码？</a></p>
+              <button class="btn btn-lg btn-block" type="submit">注册</button>
+              <p class="link_agreement">请阅读<a>《葵果广告开发者协议》</a>，注册即代表同意协议</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/flag.js"></script>
+    <script>
+      window.onload = function (){
+        var a = $(window).height() -70;
+        $(".white-shild").css("min-height",a);
+      }
+     $("#header_nav > li").ScrollNav({
+        scrollObj:"#header_nav > .scrollObj", //滑动的对象
+        speed:"fast" //速度
+      });
+    </script>
+  </body>
+</html>
